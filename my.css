@@ -178,24 +178,25 @@
     font-size: 0; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__image {
-        width: 50%; 
+        width: 50%;
       }
       .top-banner__inner .top-banner__image img {
         width: 100%; 
       } 
     }
     @media (max-width: 520px) {
+      .top-banner__inner {
+        flex-direction: column; 
+      }
       .top-banner__inner .top-banner__image {
         width: 65%;
         margin-bottom: 20px; 
+      }
+      .top-banner__inner .top-banner__image img {
+        width: 100%; 
       } 
     }
-  @media (max-width: 520px) {
-    .top-banner__inner {
-      flex-direction: column; 
-    } 
-  }
-    
+
     .brand-span {
       font-size: 14px;
       color: #c18f59; }

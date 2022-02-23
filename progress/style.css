@@ -1,0 +1,208 @@
+/* .BurgerButton {
+    border-style: solid;
+    border-width: .1px;
+    cursor: pointer;
+    z-index: 1;
+} */
+.bar1, .bar2, .bar3 {
+    width:55px;
+    height:9px;
+    background-color: blue;
+    margin: 6px 0 0 0; /* TOP right bottom Left */}
+.change-burger .bar1{
+    transform: translate(-1px, 8px) rotate(-45deg); /* right⇨down⇓*/
+    background-color: red;  }
+.change-burger .bar3{
+    transform: translate(-1px, -16px) rotate(45deg);
+    ; /* right⇨down⇓*/
+    background-color: aquamarine;  }
+.change-burger .bar2{
+    opacity: 0; }
+.L1{
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;}
+.L2{
+    border-style: solid;
+    border-width: 2px;
+    border-color: yellow;}
+.L3{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;}
+
+
+.NavBarL1 {
+    position: fixed; /*or sticky*/
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width:99%;
+    height:40px;
+    /* height: 20%; */
+    background-color: black;
+    z-index:10;
+}
+.NavBarL2 {
+    height:100%;
+    width:99%;
+}
+
+.BurgerButton{
+    top:-25%;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: cyan;
+    position:relative;
+    z-index:3;
+    cursor: pointer;
+    float:right}
+
+.DropDown{
+    display: none;
+    border-style: dotted;
+    border-width: 15px;
+    border-color:green;
+    padding:10% 0 0 0 ;
+    top:0%;
+    left:0%;
+    right:0%;
+    bottom:0%;
+    height:99%;
+    width:100%;
+    color:red;
+    position: fixed;
+    background-color: black;
+    /* float:center; */
+    opacity:.2;
+}
+
+.DropDown-list{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width:85%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    padding: 3%;
+    text-align: center;
+}
+
+.DropDown-list a{
+    color: orange;
+    font-size: 500px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.DropDown-list a:hover{
+    color:brown;
+}
+
+.stop-scroll{
+    overflow:hidden;
+    /* opacity: 1; */
+}
+
+/* .Intro{
+    width:95%;
+    position: relative;
+} */
+
+.IntroL1 {
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    right: 0%;
+    height:70%;
+    width: 99%;
+    background-color: cyan;
+    z-index:9;
+}
+
+.IntroL2 {
+    position: relative;
+}
+
+.IntroL3 {
+    /* position: absolute; */
+    width: 99%;
+}
+
+
+
+.IntroBottom{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .IntroBottom {
+      /* flex-direction: column; */
+      background-color: blue;
+    } }
+
+.Intro span{
+    width: 80%;
+    height: 100%;
+    width:200px;
+    height:200px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+}
+.IntroL3Header {
+    width:99%;
+    left:0%;
+    right:0%;
+    z-index: 11;
+    background-color: blue;
+}
+
+.IntroL3Text{
+    /* padding-top: 200px; */
+    background-color: red;
+}
+
+
+.IntroL3Header span{
+    display: inline;
+    width:80%;
+}
+.IntroL3Image span{
+    display: inline-block;
+    /* width: 200px; */
+    /* height: 400px; */
+}
+.IntroL3Text span{
+    display: inline-block;
+    /* left: 50%; */
+    /* width: 300px; */
+    /* height: 400px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spacer {
+    position:absolute;
+    top: 50%;
+    /* margin-top:2%; */
+    font-size:2em;
+    /* height: 100000000px; */
+    z-index: 8;
+}
+
+img{
+    height:100px;
+}
