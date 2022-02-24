@@ -48,6 +48,15 @@
     width:99%;
 }
 
+/*
+absolute allows using TBRL properties
+sticks to any container with position defined(if not closest relative container), not container
+position: absolute takes container out of the hierarchy flow
+
+
+
+*/
+
 .BurgerButton{
     top:-25%;
     border-style: dotted;
@@ -96,9 +105,10 @@
     text-transform: uppercase;
     transition: 0.3s ease;
 }
-.DropDown-list a:hover{
+.DropDown-list a:hover, .DropDown-list a:focus, .DropDown-list a:active{
     color:brown;
 }
+
 
 .stop-scroll{
     overflow:hidden;
@@ -122,16 +132,16 @@
 }
 
 .IntroL2 {
-    position: relative;
+    background-color: orange;
+    position: absolute;
     align-items: center;
-    top: 5%;
+    inset: 5%;
+    /* top: 5%;
     left:5%;
     right: 5%;
-    bottom: 5%;
+    bottom: 5%; */
     width:90%;
     height: 90%;
-
-
 }
 
 .IntroL3 {
@@ -148,58 +158,84 @@
 .Intro span{
     width: 80%;
     height: 100%;
-    width:200px;
-    height:200px;
+    /* width:200px; */
+    /* height:200px; */
     padding: 5px;
     border: 1px solid blue;    
     background-color: yellow; 
 }
 .IntroL3Header {
-    height: 20%;
     width:99%;
     top: 20%;
-    bottom: 10%;
     left:0%;
+    bottom: 10%;
+    height: 20%;
     right:0%;
     z-index: 11;
     background-color: blue;
-}
-.IntroBottom{
-    /* top: -30%; */
+    font-size: clamp(1rem, 10vw, 2rem);  
 }
 
-.IntroL3Text{
-    /* padding-top: 200px; */
+/* flex:1(oout of sum(flexes)) = flex(flex-grow,flex-shrink=1,     flex-basis=0) */
+
+.IntroL3Bottom{
+    display: flex;
+}
+
+/* .IntroL3Text{
     background-color: red;
 }
 
 
-.IntroL3Header span{
-    display: inline;
+.IntroL3Bottom span{
+    display: inline-block;
 }
+
 .IntroL3Image{
-    display: flex;
-    width:38%;
-    margin: 10
-    /* width: 200px; */
-    /* height: 400px; */
+    position: absolute;
+    width:600px;
+    left:0;
+    background-color: beige;
 }
 .IntroL3Text{
-    display: flex;
-    width: 60%;
-    /* width: 300px; */
-    /* height: 400px; */
+    position: absolute;
+    right:0;
+} */
+.IntroL3Text{
+    background-color: red;
+}
+
+
+.IntroL3Bottom span{
+    display: inline-block;
+}
+
+.IntroL3Image{
+    position: absolute;
+    width:600px;
+    left:0;
+    background-color: beige;
+}
+
+.IntroL3Text{
+    position: absolute;
+    /* justify-content: center; */
+    /* T R B L */
+    inset: 3% 5% 6% 7%;
 }
 
 
 
 
+/* display: flex
+flex-direction (row: main axis left right horizontal) (column: main cross axis top bottom vertical) default row-horizontal
+main axis cross axis
+justify-content: flex-end, center, flex-start (relative to flex-direction)
+align-items: relative to flex-direction(opposite of justify content) 
+align-items: stretch
+box-sizing:border-box;
 
-
-
-
-
-
+*/
 
 
 
@@ -214,5 +250,5 @@
 }
 
 img{
-    height:100px;
+    width:100%;
 }
