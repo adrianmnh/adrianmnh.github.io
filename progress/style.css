@@ -105,10 +105,16 @@ position: absolute takes container out of the hierarchy flow
     text-transform: uppercase;
     transition: 0.3s ease;
 }
-.DropDown-list a:hover, .DropDown-list a:focus, .DropDown-list a:active{
+.DropDown-list a:hover{
     color:brown;
 }
+.DropDown-list a:focus{
+    color: blue;
+}
 
+.DropDown-list a:active{
+    color: yellowgreen
+}
 
 .stop-scroll{
     overflow:hidden;
@@ -221,7 +227,8 @@ position: absolute takes container out of the hierarchy flow
     position: absolute;
     /* justify-content: center; */
     /* T R B L */
-    inset: 3% 5% 6% 7%;
+    right: 0%;
+    /* inset: 3% 5% 6% 7%; */
 }
 
 
