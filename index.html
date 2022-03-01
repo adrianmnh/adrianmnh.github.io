@@ -6,8 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="my.css">
 </head>
-<body style="background-image: url('./under_construction.jpg'); background-size: 100%; background-position-x: 50%; background-position-y: 20%;">
-
+<body style="background-image: url('./under_construction.jpg'); background-size: 100%; background-position: center;">
+	<div style="font-size: 30px;">
+		code $PROFILE<br>
+		clear<br>
+		$ENV:STARSHIP_CONFIG = "F:\config\starship.toml"<br>
+		<br>
+		function colormap() {<br>
+		    for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done<br>
+		}<br>
+		<br>
+		$ENV:STARSHIP_CACHE = "F:\log"<br>
+		# powershell Start-Process powershell -Verb runAs<br>
+		<br>
+		function colormap {<br>
+			python F:\python\colormap.py<br>
+		}<br>
+		<br>
+		function ~ {<br>
+			cd C:\Users\user\container<br>
+		}<br>
+		<br>
+		function cd381 {<br>
+			cd C:\Users\user\Spring22\381-AdvancedProgrammingC++<br>
+		}<br>
+		<br>
+		function build($name){<br>
+			$exe = ($name).replace("cpp", "exe")<br>
+			g++ $name -o $exe<br>
+			exec $exe<br>
+		}<br>
+		<br>
+		Invoke-Expression (starship init powershell)<br>
+	</div>
 </body>
 </html>
-git 
