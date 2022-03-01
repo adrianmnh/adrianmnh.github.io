@@ -131,16 +131,18 @@ position: absolute takes container out of the hierarchy flow
     top: 50px;
     left: 0%;
     right: 0%;
-    height:99%;
+    height:80%;
     width: 99%;
     background-color: cyan;
     z-index:9;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .IntroL2 {
     background-color: orange;
-    position: absolute;
-    align-items: center;
     inset: 5%;
     /* top: 5%;
     left:5%;
@@ -148,18 +150,14 @@ position: absolute takes container out of the hierarchy flow
     bottom: 5%; */
     width:90%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline; /* top */
 }
 
 .IntroL3 {
-    /* position: absolute; */
     width: 99%;
 }
-
-@media (max-width: 600px) {
-    .IntroBottom {
-      /* flex-direction: column; */
-      background-color: blue;
-    } }
 
 .Intro span{
     width: 80%;
@@ -186,66 +184,33 @@ position: absolute takes container out of the hierarchy flow
 
 .IntroL3Bottom{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-/* .IntroL3Text{
-    background-color: red;
-}
-
-
-.IntroL3Bottom span{
-    display: inline-block;
-}
 
 .IntroL3Image{
-    position: absolute;
-    width:600px;
-    left:0;
     background-color: beige;
+    width: 100px;
+    height: 100px;
 }
-.IntroL3Text{
-    position: absolute;
-    right:0;
-} */
+
 .IntroL3Text{
     background-color: red;
 }
-
-
-.IntroL3Bottom span{
-    display: inline-block;
-}
-
-.IntroL3Image{
-    position: absolute;
-    width:600px;
-    left:0;
-    background-color: beige;
-}
-
-.IntroL3Text{
-    position: absolute;
-    /* justify-content: center; */
-    /* T R B L */
-    right: 0%;
-    /* inset: 3% 5% 6% 7%; */
-}
-
 
 
 
 /* display: flex
 flex-direction (row: main axis left right horizontal) (column: main cross axis top bottom vertical) default row-horizontal
 main axis cross axis
-justify-content: flex-end, center, flex-start (relative to flex-direction)
+justify-content: flex-end, center, flex-start, space-around (relative to flex-direction)
 align-items: relative to flex-direction(opposite of justify content) 
 align-items: stretch
 box-sizing:border-box;
 
 */
-
-
-
 
 .spacer {
     position:absolute;
