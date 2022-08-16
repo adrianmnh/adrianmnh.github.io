@@ -1,9 +1,9 @@
 console.log('square grid')
 
 let grid;
-let res = 10;
-let width = 800;
-let height = 400;
+let res = 40;
+let width = 400;
+let height = 200;
 let rows = height/res;
 let cols = width/res;
 
@@ -26,6 +26,10 @@ function setup(){
 	}
 }
 
+let startX, startY, endX, endY;
+let start=false;
+let end=false;
+
 function draw() {
 	background(0);
 	for (let i=0; i<cols; i++){
@@ -33,11 +37,39 @@ function draw() {
 			let x = i*res;
 			let y = j*res;
 			if(grid[i][j]==1){
-				fill(255);
+				fill(255,0,0);
 				rect(x,y,res,res);
 			}
+			if(mouseX>x && mouseX<x+res && mouseIsPressed && mouseY>y && mouseY<y+res && !start){
+				// console.log(x,y);
+					startX=x;
+					startY=y;
+					start=true;
+					console.log("Start: " + startX + ", " +startY);
+					break;
+			} 
+			if(mouseX>x && mouseX<x+res && mouseIsPressed && mouseY>y && mouseY<y+res && start && !end){
+				// console.log(x,y);
+					endX=x;
+					endY=y;
+					end=true;
+					console.log("End: " + endX + ", " + endY);
+			}
+
+			// 		}
+					
+			// 	}
+
+			// }
+
 		}	
 	}
+	if(start){
+		fill(0,0,255);
+		rect(startX,startY,res,res);
+	}
+	if(end){
+		fill(170);
+		rect(endX,endY,res,res);
+	}
 }
-// setup();
-// draw();
