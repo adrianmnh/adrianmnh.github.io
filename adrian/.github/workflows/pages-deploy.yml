@@ -2,7 +2,7 @@ name: 'Automatic build'
 on:
   push:
     branches:
-      - master
+      - mainBranch
     paths-ignore:
       - .gitignore
       - README.md
