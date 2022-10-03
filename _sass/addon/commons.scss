@@ -666,10 +666,10 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar {
-    > a {
+    > a { 
       display: block;
-      width: 6rem;
-      height: 6rem;
+      width: 12rem;       /* profile image size on phone resolution */
+      height: 12rem;
       border-radius: 50%;
       border: 2px solid rgba(222, 222, 222, 0.7);
       overflow: hidden;
@@ -1220,8 +1220,8 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar > a {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .site-subtitle {
@@ -1577,12 +1577,12 @@ $sidebar-display: "sidebar-display";
       #avatar {
         @extend %profile-ml;
 
-        > a {
-          width: 6.2rem;
-          height: 6.2rem;
+        > a {           /* size of profile picture on high pixel res */
+          width: 16.2rem;
+          height: 16.2rem;
 
-          &.mx-auto {
-            margin-left: 0 !important;
+          &.mx-auto {       /* maximized margin */
+            margin-left: -27.5px !important;
           }
         }
       }
