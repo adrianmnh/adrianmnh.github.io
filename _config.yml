@@ -21,7 +21,7 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Adrian                          # the main title
+title: Adrian Noa                     # the main title
 
 tagline: Portfolio   # it will display as the sub-title
 
@@ -41,11 +41,11 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Adrian Miguel Noa
-  email: example@doamin.com             # change to your email address
+  email: adrian_noa@icloud.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/toovisibletosee      # change to your twitter homepage
+    - https://github.com/adrianmnh       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
