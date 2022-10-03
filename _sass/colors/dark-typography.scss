@@ -1,69 +1,75 @@
 /*
  * The main dark mode styles
- */
+ *
 
-@mixin dark-scheme {
-  /* Framework color */
+ /* Framework color 
+ --main-wrapper-bg: rgb(49, 64, 94);
+ */
+ @mixin dark-scheme {
   --body-bg: var(--main-wrapper-bg);
-  --mask-bg: rgb(68, 69, 70);
-  --main-wrapper-bg: rgb(27, 27, 30);
-  --main-border-color: rgb(44, 45, 45);
+  --mask-bg: #444546;
+  --main-wrapper-bg: #222730;
+  --main-border-color: #1d1f27;
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
-  --text-muted-color: rgb(107, 116, 124);
-  --heading-color: #cccccc;
+  --text-color: #e4f3e9;
+  --text-muted-color: #f4b6b6;
+  --heading-color: #f4b6b6;
   --blockquote-border-color: rgb(66, 66, 66);
-  --blockquote-text-color: rgb(117, 117, 117);
-  --link-color: rgb(138, 180, 248);
+  --blockquote-text-color: #e4f3e9;
+  --link-color: rgb(174, 104, 104);
+  /*--link-color: rgb(138, 180, 248);*/
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: rgb(39, 40, 43);
   --btn-border-color: rgb(63, 65, 68);
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: var(--btn-border-color);
   --btn-box-shadow: var(--main-wrapper-bg);
-  --card-header-bg: rgb(51, 50, 50);
-  --label-color: rgb(108, 117, 125);
-  --checkbox-color: rgb(118 120 121);
+  --card-header-bg: var(--main-wrapper-bg);
+  --label-color: #e4f3e9;
+  --checkbox-color: rgb(119, 121, 118);
   --checkbox-checked-color: var(--link-color);
+  
 
-  /* Sidebar */
-  --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
-  --sidebar-muted-color: #6d6c6b;
-  --sidebar-active-color: rgb(255 255 255 / 80%);
-  --nav-cursor-color: rgb(183, 182, 182);
-  --sidebar-btn-bg: rgb(117 116 116 / 20%);
+  /* Sidebar 
+    --sidebar-bg: radial-gradient(circle, #224785 0%, #1d1f27 100%);
+  */
+  --sidebar-bg: #1d1f27 100%;
+  --sidebar-muted-color: #e4f3e9;
+  --sidebar-active-color: #f4b6b6;
+  --nav-cursor-color: #f4b6b6;
+  --sidebar-btn-bg: rgba(145, 12, 12, 0.2);
 
   /* Topbar */
   --topbar-text-color: var(--text-color);
-  --topbar-wrapper-bg: rgb(39, 40, 43);
+  --topbar-wrapper-bg: #1d1f27;
   --search-wrapper-bg: rgb(34, 34, 39);
   --search-wrapper-border-color: rgb(34, 34, 39);
   --search-icon-color: rgb(100, 102, 105);
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Home page */
-  --post-list-text-color: rgb(175, 176, 177);
+  --post-list-text-color: #f3e4e4;
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: rgb(64, 65, 66);
+  --btn-paginator-hover-color: rgb(244, 182, 182);
   --btn-paginator-border-color: var(--btn-border-color);
   --btn-text-color: var(--text-color);
-  --pin-bg: rgb(34 35 37);
+  --pin-bg: rgb(244, 182, 182);
   --pin-color: inherit;
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
+  --toc-highlight: #e4f3e9;
   --tag-bg: rgb(41, 40, 40);
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: rgba(42, 47, 53, 0.52); /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
-  --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #6c757d;
+  --footnote-target-bg: rgb(189, 194, 223);
+  --btn-share-color: rgb(254, 191, 191);
   --btn-share-hover-color: #bfc1ca;
   --relate-post-date: var(--text-muted-color);
-  --card-bg: rgb(39, 40, 43);
-  --card-border-color: rgb(53, 53, 60);
+  --card-bg: rgb(253, 226, 226);
+  --card-border-color: rgb(53, 53, 113);
   --card-box-shadow: var(--main-wrapper-bg);
   --preview-img-bg: radial-gradient(circle, rgb(22 22 24) 0%, rgb(32 32 32) 100%);
   --kbd-wrap-color: #6a6a6a;

@@ -13,10 +13,10 @@
   .highlight .n { color: #f8f8f2; } /* Name */
   .highlight .o { color: #f92672; } /* Operator */
   .highlight .p { color: #f8f8f2; } /* Punctuation */
-  .highlight .cm { color: #75715e; } /* Comment.Multiline */
-  .highlight .cp { color: #75715e; } /* Comment.Preproc */
+  .highlight .cm { color: #ffd500; } /* Comment.Multiline */
+  .highlight .cp { color: #dbb90c; } /* Comment.Preproc */
   .highlight .c1 { color: #75715e; } /* Comment.Single */
-  .highlight .cs { color: #75715e; } /* Comment.Special */
+  .highlight .cs { color: #f5cd08; } /* Comment.Special */
   .highlight .ge { color: inherit; font-style: italic; } /* Generic.Emph */
   .highlight .gs { font-weight: bold; } /* Generic.Strong */
   .highlight .kc { color: #66d9ef; } /* Keyword.Constant */
@@ -66,19 +66,21 @@
   .highlight .il { color: #ae81ff; } /* Literal.Number.Integer.Long */
   .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
   .highlight .gd { color: #f92672; background-color: #561c08; } /* Generic.Deleted & Diff Deleted */
-  .highlight .gi { color: #a6e22e; background-color: #0b5858; } /* Generic.Inserted & Diff Inserted */
+  .highlight .gi { color: #a6e22e; background-color: #054284; } /* Generic.Inserted & Diff Inserted */
 
   /* -----  custom styles ------ */
 
-  --highlight-bg-color: #252525;
-  --highlighter-rouge-color: #de6b18;
-  --highlight-lineno-color: #6c6c6d;
-  --inline-code-bg: #272822;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: rgb(60 60 60);
-  --code-header-icon-color: rgb(86 86 86);
+  --highlight-bg-color: #002050;
+  --highlighter-rouge-color: rgb(85, 2, 2);
+  --highlight-lineno-color: #1616ff;
+  --inline-code-bg: rgb(244, 182, 182);
+  --code-header-text-color: rgb(244, 182, 182);
+  --code-header-muted-color: rgb(244, 182, 182);
+  --code-header-icon-color: rgb(244, 182, 182);
   --clipboard-checked-color: #2bcc2b;
-  --filepath-text-color: #bdbdbd;
+  --filepath-text-color: rgb(85, 2, 2);
+  // --text-muted: #ffffff;
+  // --text-muted-color: #ffffff;
 
   .highlight {
     .gp { color: #818c96; }
