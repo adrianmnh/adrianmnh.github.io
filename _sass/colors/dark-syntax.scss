@@ -66,19 +66,19 @@
   .highlight .il { color: #ae81ff; } /* Literal.Number.Integer.Long */
   .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
   .highlight .gd { color: #f92672; background-color: #561c08; } /* Generic.Deleted & Diff Deleted */
-  .highlight .gi { color: #a6e22e; background-color: #054284; } /* Generic.Inserted & Diff Inserted */
+  .highlight .gi { color: #a6e22e; background-color: #718405; } /* Generic.Inserted & Diff Inserted */
 
   /* -----  custom styles ------ */
 
-  --highlight-bg-color: #002050;
-  --highlighter-rouge-color: rgb(85, 2, 2);
-  --highlight-lineno-color: #1616ff;
-  --inline-code-bg: rgb(244, 182, 182);
-  --code-header-text-color: rgb(244, 182, 182);
-  --code-header-muted-color: rgb(244, 182, 182);
-  --code-header-icon-color: rgb(244, 182, 182);
-  --clipboard-checked-color: #2bcc2b;
-  --filepath-text-color: rgb(85, 2, 2);
+  --highlighter-rouge-color: #550202; /* `` inline code */
+  --inline-code-bg: #e4f3e9;          /* `` inline code */
+  --highlight-bg-color: #1d1f27;
+  --highlight-lineno-color: #e4f3e9;
+  --code-header-text-color: #e4f3e9;
+  --code-header-muted-color: #e4f3e9;
+  --code-header-icon-color: #e4f3e9;
+  --clipboard-checked-color: #550202;
+  --filepath-text-color: #550202;
   // --text-muted: #ffffff;
   // --text-muted-color: #ffffff;
 

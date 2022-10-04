@@ -542,7 +542,7 @@ img[data-src] {
 
     border-bottom: none;
     text-decoration: none;
-    color: #d2603a;
+    color: #e4f3e9;
   }
 }
 
@@ -666,7 +666,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar {
-    > a { 
+    > a {
       display: block;
       width: 12rem;       /* profile image size on phone resolution */
       height: 12rem;
@@ -706,13 +706,14 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 99%);
+      color: #f3f3e4;
     }
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--sidebar-muted-color);
+    //color: #f3f3e4;
+    color: var(--sidebar-muted-color); 
     line-height: 1.2rem;
     word-spacing: 1px;
     margin: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -1220,8 +1221,8 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar > a {
-    width: 6rem;
-    height: 6rem;
+    width: 115rem;
+    height: 115rem;
   }
 
   .site-subtitle {
@@ -1577,11 +1578,11 @@ $sidebar-display: "sidebar-display";
       #avatar {
         @extend %profile-ml;
 
-        > a {           /* size of profile picture on high pixel res */
+        > a {
           width: 16.2rem;
           height: 16.2rem;
 
-          &.mx-auto {       /* maximized margin */
+          &.mx-auto {
             margin-left: -27.5px !important;
           }
         }
