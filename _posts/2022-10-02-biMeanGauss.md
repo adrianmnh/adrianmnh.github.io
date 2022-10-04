@@ -14,8 +14,6 @@ image:
   alt: 
 ---
 
-# bi-Mean Gaussian Automatic Threshold Selection
-
 ## Objective
 
 To take an image's histogram from a text file and find the best threshold using the Gaussian automatic threshold selection method.
@@ -32,3 +30,4 @@ This process yields a Gaussian function which will be graphed along with the his
 `g++ noa_adrian_main.cpp -o main.exe && ./main.exe BiGuass_data1.txt outFile1-1.txt outFile1-2.txt && ./main.exe BiGuass_data2.txt outFile2-1.txt outFile2-2.txt`
 
 <a href='https://github.com/adrianmnh/CS381-ComputerVision/tree/mainBranch/project3'>Project Repo</a>
+
