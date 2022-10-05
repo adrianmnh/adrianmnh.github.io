@@ -90,6 +90,7 @@
 
 {% if jekyll.environment == 'production' %}
   <!-- PWA -->
+  <script defer src="{{ '/app.js' | relative_url }}"></script>
   {% if site.pwa.enabled %}
     <script defer src="{{ '/app.js' | relative_url }}"></script>
   {% else %}
