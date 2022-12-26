@@ -37,6 +37,19 @@
         <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
       </a>
     </li>
+
+<!-- New Posts page -->
+    <li class="nav-item
+    {% if page.title 'Projects' or page.collection 'posts' %}
+    {{ "active" }} 
+    {%  endif %} ">
+      <a href="{{ site.paginate_path | replace: '/:num', '' | relative_url }}"
+        class="nav-link">
+        <i class="fa-fw fas fa-pen ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>{{ 'Projects' | upcase }}</span>
+      </a>
+    </li>
+
     <!-- the real tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
