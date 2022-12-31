@@ -118,7 +118,7 @@ assets:
 pwa:
   enabled: true   # the option for PWA feature
 
-paginate: 1
+paginate: 3
 paginate_path: "/projects/:num/"
 
 # ------------ The following options are not recommended to be modified ------------------
