@@ -41,7 +41,7 @@ The purpose of this project is to rework the models into a modern format
 
 ``
 
-[![GoogleDriveLink](https://github.com/adrianmnh/adrianmnh.github.io/blob/mainBranch/assets/img/video.jpg?raw=true){width=300}](https://drive.google.com/file/d/1CM1FJJYBrqyxCldJN0Mcd0Y1VMcKwdBe/view?usp=sharing)
+[![GoogleDriveLink](https://github.com/adrianmnh/adrianmnh.github.io/blob/mainBranch/assets/img/video.jpg?raw=true){width=100 height=100}](https://drive.google.com/file/d/1CM1FJJYBrqyxCldJN0Mcd0Y1VMcKwdBe/view?usp=sharing)
 
 
 <a href='https://github.com/adrianmnh/dm-vm/tree/mainBranch/project1' style='font-size:1.5em; font-weight:bold'> Link to Project source code </a>
