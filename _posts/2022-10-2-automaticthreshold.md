@@ -1,9 +1,9 @@
 ---
-title: bi-Mean Gaussian Automatic Threshold Selection
+title: Automatic Threshold Selection
 author: adrian
-date: 2022-10-2 15:02:00 -400
-categories: [Computer Vision, Image Processing]
-tags: [Histogram, C++, thresholding]
+date: 2022-10-2
+categories: [Image Processing, Thresholding Algorithm]
+tags: [Histogram, C++ Programming Language]
 pin: false
 math: true
 mermaid: true

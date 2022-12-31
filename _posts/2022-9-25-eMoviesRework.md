@@ -2,8 +2,8 @@
 title: eMovies Model Transformation
 author: adrian
 date: 2022-9-25 15:02:00 -400
-categories: [Databases, Data Modeling]
-tags: [data , ERwinDM, PDM, CDM, LDM]
+categories: [Data Analytics, Data Modeling and Databases]
+tags: [Data Modeling , erwin Data Modeler, Physical Data Model, Conceptual Data Model , Logical Data Model, SQL Server, Quest Software]
 pin: false
 math: true
 mermaid: true
@@ -14,7 +14,7 @@ image:
   alt: 
 ---
 
-eMovies is a data model with Logical and Physical models that describe an outdated Movie rental service.
+eMovies is a data model provided by Quest's ERwinDM sample with Logical and Physical models that describe an outdated Movie rental service.
 
 The purpose of this project is to rework the models into a modern format
 
@@ -39,13 +39,9 @@ The purpose of this project is to rework the models into a modern format
 
 **CTRL + Click on link to open in new TAB**
 
-`Submission Video v1 GoogleDrive`
+``
 
-<a href="https://drive.google.com/file/d/1CM1FJJYBrqyxCldJN0Mcd0Y1VMcKwdBe/view?usp=sharing" title="eMovies Reworked"><img src="https://github.com/adrianmnh/dm-vm/raw/mainBranch/eMovies/LOGICAL.jpg" alt="GoogleDrive link" width=100px/></a>
-
-`Submission Video v1 BlackBoard`
-
-<a href="https://bbhosted.cuny.edu/webapps/assignment/uploadAssignment?course_id=_2188140_1&content_id=_70625575_1&mode=DEFAULT&currentAttemptIndex=2&attempt_id=_141771406_1#" title="eMovies Reworked"><img src="https://github.com/adrianmnh/dm-vm/raw/mainBranch/eMovies/LOGICAL.jpg" alt="BlackBoard link" width=100px/></a>
+[![GoogleDriveLink](https://github.com/adrianmnh/adrianmnh.github.io/blob/mainBranch/assets/img/video.jpg?raw=true){width=300}](https://drive.google.com/file/d/1CM1FJJYBrqyxCldJN0Mcd0Y1VMcKwdBe/view?usp=sharing)
 
 
 <a href='https://github.com/adrianmnh/dm-vm/tree/mainBranch/project1' style='font-size:1.5em; font-weight:bold'> Link to Project source code </a>
