@@ -41,10 +41,10 @@
     
     
     <!-- New Posts page -->
-    <li class="nav-item {% if page.title == 'Projects' or page.collection 'posts' %}{{ "active" }} {%  endif %}">
+    <li class="nav-item {% if page.layout == 'projects' %}{{ "active" }}{%  endif %}">
       <a href="{{ site.paginate_path | replace: '/:num', '' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-pen ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ 'Projects' | upcase }}</span>
+        <span>{{ 'projects' | upcase }}</span>
       </a>
     </li>
 
