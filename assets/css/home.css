@@ -1,4 +1,5 @@
 .box-placeholder {
+    padding-top: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,6 +15,11 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+}
+
+h2 {
+    /* display: inline-block; */
+    padding-bottom: 5%;
 }
 
 .image-grid a {
@@ -60,3 +66,51 @@
         width: 50%;
     }
 }
+
+
+#parent {
+
+    padding-top: 200px;
+    width: 40%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* background-color: blue; */
+  }
+  
+  #container {
+    width: 80%;
+    height: 80%;
+    /* position: absolute;
+    display: flex; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+  }
+  
+  .block {
+    opacity: .5;
+    width: 90%;
+    height: 90%;
+    background-color: red;
+    position: absolute;
+    /* transition: transform 0.5s ease; */
+    transition: opacity 4s ease, transform 2.5s ease;
+  }
+  
+  .active {
+    transform: translateX(0);
+    opacity: .9;
+  }
+  
+  .inactive {
+    transform: translateX(-200%);
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  
