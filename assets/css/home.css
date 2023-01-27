@@ -79,7 +79,7 @@ h2 {
 
     padding-top: 0;
     height: 250px;
-    width: 80%;
+    width: 95%;
     position: relative;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ h2 {
   }
   
   #container {
-    width: 85%;
+    width: 98%;
     height: 95%;
     /* position: absolute;
     display: flex; */
@@ -116,14 +116,21 @@ h2 {
     opacity: .9;
   }
   
-  .inactive-right {
+  .inactive-left {
     /* transform: translateX(-40%); */
-    transform: translateX(40%);
+    transform: translateX(80%);
     opacity: 0;
   }
-  .inactive-left {
+  .inactive-right {
     transform: translateX(-40%);
     /* transform: translateX(40%); */
     opacity: 0;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+  .red {
+    background-color: red;
   }
   

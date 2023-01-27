@@ -31,18 +31,18 @@
 
 // when entering view port
 
-var observer = new IntersectionObserver(function(entries) {
+var observerImages = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.intersectionRatio > 0) {
       entry.target.classList.add('active');
-      observer.unobserve(entry.target);
+      observerImages.unobserve(entry.target);
     }
   });
 });
 
 var images = document.querySelectorAll('.image-grid img');
 images.forEach(function(image) {
-  observer.observe(image);
+  observerImages.observe(image);
 });
 
 
@@ -70,12 +70,18 @@ document.addEventListener("keydown", function(event) {
 
 function prevBlock() {
   // Remove active class from current block
+  console.log("Left");
   blocks.forEach(function(block) {
     block.classList.remove("active");
-    block.classList.add("inactive-left");
+    block.classList.remove("inactive-left");
+    // block.classList.add("inactive-left");
     block.classList.add("inactive-right");
+    
+    // blocks[(currentIndex-1+blocks.length)%blocks.length].classList.add("inactive-right");
+    block.classList.remove("red");
+    block.classList.add("blue");
   });
-
+  
   
   // Update current index
   currentIndex--;
@@ -87,61 +93,50 @@ function prevBlock() {
   blocks[currentIndex].classList.remove("inactive-right");
   blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
+  // blocks[currentIndex].classList.add("inactive-right");
 }
 
 function nextBlock() {
+  console.log("RIGHT");
+  
   // Remove active class from current block
   blocks.forEach(function(block) {
-    block.classList.add("inactive-right");
     block.classList.remove("active");
+    block.classList.remove("inactive-right");
+    // block.classList.add("inactive-right");
+    block.classList.add("inactive-left");
+
+    // blocks[(currentIndex+1+blocks.length)%blocks.length].classList.add("inactive-left");
+    block.classList.remove("blue");
+    block.classList.add("red");
   });
+  // blocks[currentIndex].classList.remove("active");
+  // blocks[currentIndex].classList.add("inactive-right");
   
   // Update current index
   currentIndex = (currentIndex+1+blocks.length) % blocks.length;
 
   // Add active class to next block
   blocks[currentIndex].classList.remove("inactive-right");
-  // blocks[currentIndex].classList.remove("inactive-left");
+  blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
 }
 
 
 // $("#container").on("swipeleft", nextBlock);
 // $("#container").on("swiperight", prevBlock);
-$("#container").on("click", nextBlock);
+// $("#container").on("click", nextBlock);
 
 
 
 // Initialize the timer
-// var timer = setInterval(nextBlock, 10);
+// var timer = setInterval(nextBlock, 1000);
 
 // Create an observer
 var observerBlocks = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-          // Start the timer when the block enters the viewport
-          timer = setInterval(nextBlock, 5000);
 
-
-          // // Clear the timer on swipe or click
-          // $("#container").on("swipeleft", function() {
-          //   clearInterval(timer);
-          //   nextBlock();
-          //   timer = setInterval(nextBlock, 5000);
-          // });
-          // $("#container").on("swiperight", function() {
-          //   clearInterval(timer);
-          //   prevBlock();
-          //   timer = setInterval(nextBlock, 5000);
-          // });
-          $("#container").on("click", function() {
-            clearInterval(timer);
-            currentIndex--;
-            nextBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
-          // Get the container element
-          var c = $("#container");
+    var c = $("#container");
           
           // Attach the TouchSwipe event to the container element
           c.swipe({
@@ -162,6 +157,34 @@ var observerBlocks = new IntersectionObserver(function(entries) {
               },
               threshold: 15 // the minimum distance required for a swipe event to be detected
           });
+
+
+
+      if (entry.isIntersecting) {
+          // Start the timer when the block enters the viewport
+          timer = setInterval(nextBlock, 5000);
+          // console.log
+
+
+          // // Clear the timer on swipe or click
+          // $("#container").on("swipeleft", function() {
+          //   clearInterval(timer);
+          //   nextBlock();
+          //   timer = setInterval(nextBlock, 5000);
+          // });
+          // $("#container").on("swiperight", function() {
+          //   clearInterval(timer);
+          //   prevBlock();
+          //   timer = setInterval(nextBlock, 5000);
+          // });
+          $("#container").on("click", function() {
+            clearInterval(timer);
+            // currentIndex--;
+            nextBlock();
+            timer = setInterval(nextBlock, 5000);
+          });
+          // Get the container element
+          
 
 
 
