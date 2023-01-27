@@ -1,11 +1,12 @@
 .box-placeholder {
-    padding-top: 10%;
+    margin: 0 auto;
+    margin-top: -2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 0 auto;
+    /* background-color: yellowgreen; */
 }
 
 .image-grid {
@@ -15,6 +16,12 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+}
+
+#welcome-title{
+    margin-top: 0%;
+    /* background-color: blueviolet; */
+    position: relative;
 }
 
 h2 {
@@ -68,22 +75,22 @@ h2 {
 }
 
 
-#parent {
+#sliding-blocks {
 
-    padding-top: 200px;
-    width: 40%;
-    height: 500px;
+    padding-top: 0;
+    height: 250px;
+    width: 80%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
     /* background-color: blue; */
   }
   
   #container {
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 95%;
     /* position: absolute;
     display: flex; */
     position: relative;
@@ -95,12 +102,13 @@ h2 {
   
   .block {
     opacity: .5;
-    width: 90%;
-    height: 90%;
-    background-color: red;
+    width: 98%;
+    height: 98%;
+    background-color: azure;
     position: absolute;
     /* transition: transform 0.5s ease; */
     transition: opacity 4s ease, transform 2.5s ease;
+    color: black;
   }
   
   .active {

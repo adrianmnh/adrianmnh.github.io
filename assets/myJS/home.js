@@ -118,40 +118,40 @@ $("#container").on("click", nextBlock);
 
 
 
-// Create an observer
-var observerBlocks = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-          // Start the timer when the block enters the viewport
-          timer = setInterval(nextBlock, 5000);
+// // Create an observer
+// var observerBlocks = new IntersectionObserver(function(entries) {
+//   entries.forEach(function(entry) {
+//       if (entry.isIntersecting) {
+//           // Start the timer when the block enters the viewport
+//           timer = setInterval(nextBlock, 5000);
 
 
-          // Clear the timer on swipe or click
-          $("#container").on("swipeleft", function() {
-            clearInterval(timer);
-            nextBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
-          $("#container").on("swiperight", function() {
-            clearInterval(timer);
-            prevBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
-          $("#container").on("click", function() {
-            clearInterval(timer);
-            currentIndex--;
-            nextBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
+//           // Clear the timer on swipe or click
+//           $("#container").on("swipeleft", function() {
+//             clearInterval(timer);
+//             nextBlock();
+//             timer = setInterval(nextBlock, 5000);
+//           });
+//           $("#container").on("swiperight", function() {
+//             clearInterval(timer);
+//             prevBlock();
+//             timer = setInterval(nextBlock, 5000);
+//           });
+//           $("#container").on("click", function() {
+//             clearInterval(timer);
+//             currentIndex--;
+//             nextBlock();
+//             timer = setInterval(nextBlock, 5000);
+//           });
 
 
 
-      } else {
-          // Stop the timer when the block exits the viewport
-          clearInterval(timer);
-      }
-  });
-});
+//       } else {
+//           // Stop the timer when the block exits the viewport
+//           clearInterval(timer);
+//       }
+//   });
+// });
 
-// Observe the parent container
-observerBlocks.observe(document.getElementById("parent"));
+// // Observe the parent container
+// observerBlocks.observe(document.getElementById("sliding-blocks"));
