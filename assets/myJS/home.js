@@ -105,8 +105,8 @@ function nextBlock() {
 }
 
 
-$("#container").on("swipeleft", nextBlock);
-$("#container").on("swiperight", prevBlock);
+// $("#container").on("swipeleft", nextBlock);
+// $("#container").on("swiperight", prevBlock);
 $("#container").on("click", nextBlock);
 
 
@@ -114,6 +114,9 @@ $("#container").on("click", nextBlock);
 // Initialize the timer
 // var timer = setInterval(nextBlock, 10);
 
+var hammer = new Hammer(document.getElementById("container"));
+hammer.on("swipeleft", nextBlock);
+hammer.on("swiperight", prevBlock);
 
 
 

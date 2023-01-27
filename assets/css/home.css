@@ -107,7 +107,7 @@ h2 {
     background-color: azure;
     position: absolute;
     /* transition: transform 0.5s ease; */
-    transition: opacity 4s ease, transform 2.5s ease;
+    transition: opacity 1.2s ease, transform 2.5s ease-out;
     color: black;
   }
   
@@ -117,8 +117,8 @@ h2 {
   }
   
   .inactive {
-    transform: translateX(-200%);
-    transform: translateX(200%);
+    /* transform: translateX(-40%); */
+    transform: translateX(40%);
     opacity: 0;
   }
   
