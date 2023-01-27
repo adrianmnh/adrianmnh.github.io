@@ -116,9 +116,14 @@ h2 {
     opacity: .9;
   }
   
-  .inactive {
+  .inactive-right {
     /* transform: translateX(-40%); */
     transform: translateX(40%);
+    opacity: 0;
+  }
+  .inactive-left {
+    transform: translateX(-40%);
+    /* transform: translateX(40%); */
     opacity: 0;
   }
   

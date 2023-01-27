@@ -72,9 +72,11 @@ function prevBlock() {
   // Remove active class from current block
   blocks.forEach(function(block) {
     block.classList.remove("active");
-    block.classList.add("inactive");
+    block.classList.add("inactive-left");
+    block.classList.add("inactive-right");
   });
 
+  
   // Update current index
   currentIndex--;
   // Check if first block
@@ -82,14 +84,15 @@ function prevBlock() {
     currentIndex = (currentIndex + blocks.length) % blocks.length;
   }
   // Add active class to previous block
-  blocks[currentIndex].classList.remove("inactive");
+  blocks[currentIndex].classList.remove("inactive-right");
+  blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
 }
 
 function nextBlock() {
   // Remove active class from current block
   blocks.forEach(function(block) {
-    block.classList.add("inactive");
+    block.classList.add("inactive-right");
     block.classList.remove("active");
   });
   
@@ -97,7 +100,8 @@ function nextBlock() {
   currentIndex = (currentIndex+1+blocks.length) % blocks.length;
 
   // Add active class to next block
-  blocks[currentIndex].classList.remove("inactive");
+  blocks[currentIndex].classList.remove("inactive-right");
+  // blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
 }
 
@@ -146,7 +150,7 @@ var observerBlocks = new IntersectionObserver(function(entries) {
                   clearInterval(timer);
                   console.log("Swipe left");
                   prevBlock();
-                  timer = setInterval(nextBlock, 2000);
+                  timer = setInterval(nextBlock, 5000);
                   
                 },
                 swipeRight: function() {
@@ -154,7 +158,7 @@ var observerBlocks = new IntersectionObserver(function(entries) {
                   clearInterval(timer);
                   console.log("Swipe right");
                   nextBlock();
-                  timer = setInterval(nextBlock, 2000);
+                  timer = setInterval(nextBlock, 5000);
               },
               threshold: 15 // the minimum distance required for a swipe event to be detected
           });
