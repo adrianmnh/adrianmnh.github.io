@@ -1,7 +1,4 @@
 
-
-
-
 // // when document loads
 
 // document.addEventListener("DOMContentLoaded", function(event) {
@@ -114,47 +111,60 @@ $("#container").on("click", nextBlock);
 // Initialize the timer
 // var timer = setInterval(nextBlock, 10);
 
-var hammer = new Hammer(document.getElementById("container"));
-hammer.on("swipeleft", nextBlock);
-hammer.on("swiperight", prevBlock);
+// Create an observer
+var observerBlocks = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+          // Start the timer when the block enters the viewport
+          timer = setInterval(nextBlock, 5000);
+
+
+          // Clear the timer on swipe or click
+          $("#container").on("swipeleft", function() {
+            clearInterval(timer);
+            nextBlock();
+            timer = setInterval(nextBlock, 5000);
+          });
+          $("#container").on("swiperight", function() {
+            clearInterval(timer);
+            prevBlock();
+            timer = setInterval(nextBlock, 5000);
+          });
+          $("#container").on("click", function() {
+            clearInterval(timer);
+            currentIndex--;
+            nextBlock();
+            timer = setInterval(nextBlock, 5000);
+          });
 
 
 
+      } else {
+          // Stop the timer when the block exits the viewport
+          clearInterval(timer);
+      }
+  });
+});
 
-// // Create an observer
-// var observerBlocks = new IntersectionObserver(function(entries) {
-//   entries.forEach(function(entry) {
-//       if (entry.isIntersecting) {
-//           // Start the timer when the block enters the viewport
-//           timer = setInterval(nextBlock, 5000);
-
-
-//           // Clear the timer on swipe or click
-//           $("#container").on("swipeleft", function() {
-//             clearInterval(timer);
-//             nextBlock();
-//             timer = setInterval(nextBlock, 5000);
-//           });
-//           $("#container").on("swiperight", function() {
-//             clearInterval(timer);
-//             prevBlock();
-//             timer = setInterval(nextBlock, 5000);
-//           });
-//           $("#container").on("click", function() {
-//             clearInterval(timer);
-//             currentIndex--;
-//             nextBlock();
-//             timer = setInterval(nextBlock, 5000);
-//           });
+// Observe the parent container
+observerBlocks.observe(document.getElementById("sliding-blocks"));
 
 
 
-//       } else {
-//           // Stop the timer when the block exits the viewport
-//           clearInterval(timer);
-//       }
-//   });
-// });
+// Get the container element
+var c = $("#container");
 
-// // Observe the parent container
-// observerBlocks.observe(document.getElementById("sliding-blocks"));
+// Attach the TouchSwipe event to the container element
+c.swipe({
+    swipeLeft: function() {
+        // Code to execute when a swipe left event is detected
+        console.log("Swipe left")
+        prevBlock();
+      },
+      swipeRight: function() {
+        // Code to execute when a swipe right event is detected
+        console.log("Swipe right")
+        nextBlock();
+    },
+    threshold: 15 // the minimum distance required for a swipe event to be detected
+});
