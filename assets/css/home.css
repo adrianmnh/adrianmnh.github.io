@@ -1,0 +1,62 @@
+.box-placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image-grid a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-grid .fade-in-image {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    transition: transform 3s ease-in-out, opacity 4s ease-in-out, filter 7s ease-in-out;
+    filter: grayscale(100%);
+    opacity: 0.005;
+    transform: scale(.1);
+    transform-origin: center;
+}
+
+.image-grid .fade-in-image.active {
+    opacity: .9;
+    transform: scale(1);
+    filter: grayscale(20%);
+}
+
+
+@media (min-width: 1080px) {
+    .image-grid a {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1079px) and (min-width: 768px) {
+    .image-grid a {
+        width: 33%;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-grid a {
+        width: 50%;
+    }
+}
