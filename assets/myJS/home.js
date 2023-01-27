@@ -1,6 +1,6 @@
+// My skills and technologies bubble-up
 
 // // when document loads
-
 // document.addEventListener("DOMContentLoaded", function(event) {
 
 //     setTimeout(function() {
@@ -15,7 +15,6 @@
 
 //     }, 1000)
 
-
 //     // too slow
 //     // const images = document.querySelectorAll('.image-grid img');
 
@@ -25,12 +24,10 @@
     
 //     // setTimeout(fadeIn, 2000);
 
-
-
 // });
+/* --------------------------------------------------------------------------------- */
 
-// when entering view port
-
+// When user enters the view port
 var observerImages = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.intersectionRatio > 0) {
@@ -45,13 +42,8 @@ images.forEach(function(image) {
   observerImages.observe(image);
 });
 
-
-
-
 // Initialize the timer
 var timer = null;
-
-
 
 // SLiding Blocks
 
@@ -82,10 +74,8 @@ function prevBlock() {
   blocks.forEach(function(block) {
     block.classList.remove("active");
     block.classList.remove("inactive-left");
-    // block.classList.add("inactive-left");
     block.classList.add("inactive-right");
     
-    // blocks[(currentIndex-1+blocks.length)%blocks.length].classList.add("inactive-right");
     block.classList.remove("red");
     block.classList.add("blue");
   });
@@ -101,7 +91,6 @@ function prevBlock() {
   blocks[currentIndex].classList.remove("inactive-right");
   blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
-  // blocks[currentIndex].classList.add("inactive-right");
 }
 
 function nextBlock() {
@@ -111,15 +100,12 @@ function nextBlock() {
   blocks.forEach(function(block) {
     block.classList.remove("active");
     block.classList.remove("inactive-right");
-    // block.classList.add("inactive-right");
     block.classList.add("inactive-left");
 
-    // blocks[(currentIndex+1+blocks.length)%blocks.length].classList.add("inactive-left");
     block.classList.remove("blue");
     block.classList.add("red");
   });
-  // blocks[currentIndex].classList.remove("active");
-  // blocks[currentIndex].classList.add("inactive-right");
+
   
   // Update current index
   currentIndex = (currentIndex+1+blocks.length) % blocks.length;
@@ -129,14 +115,6 @@ function nextBlock() {
   blocks[currentIndex].classList.remove("inactive-left");
   blocks[currentIndex].classList.add("active");
 }
-
-
-// $("#container").on("swipeleft", nextBlock);
-// $("#container").on("swiperight", prevBlock);
-// $("#container").on("click", nextBlock);
-
-
-
 
 // Create an observer
 var observerBlocks = new IntersectionObserver(function(entries) {
@@ -152,11 +130,7 @@ var observerBlocks = new IntersectionObserver(function(entries) {
     });
           
       if (entry.isIntersecting) {
-
-
           timer = setInterval(nextBlock, 5000);
-  
-        
         // Attach the TouchSwipe event to the container element
         c.swipe({
 
@@ -167,7 +141,6 @@ var observerBlocks = new IntersectionObserver(function(entries) {
               clearInterval(timer);
               console.log("Swipe left");
               prevBlock();
-              // slideBlock('left');
               timer = setInterval(nextBlock, 5000);
 
               
@@ -176,7 +149,6 @@ var observerBlocks = new IntersectionObserver(function(entries) {
               // Code to execute when a swipe right event is detected
               clearInterval(timer);
               console.log("Swipe right");
-              // slideBlock('right');
               nextBlock();
               timer = setInterval(nextBlock, 5000);
           },
@@ -193,20 +165,36 @@ var observerBlocks = new IntersectionObserver(function(entries) {
 // Observe the parent container
 observerBlocks.observe(document.getElementById("sliding-blocks"));
 
+/* --------------------------------------------------------------------------------- */
 
-// function slideBlock(direction) {
-//   var block = $('.block');
-//   var currentIndex = $('.block.active').index();
-//   var nextIndex;
+// Select the element you want to add the typewriter effect to
+const typeElem = document.querySelector(".typewriter");
 
-//   if (direction === 'left') {
-//     nextIndex = currentIndex === 0 ? block.length - 1 : currentIndex - 1;
-//     block.eq(currentIndex).animate({left: '-=50px'}, 100).animate({left: '+=50px'}, 100).animate({left: '-=100%'}, 400);
-//   } else {
-//     nextIndex = currentIndex === block.length - 1 ? 0 : currentIndex + 1;
-//     block.eq(currentIndex).animate({left: '+=50px'}, 100).animate({left: '-=50px'}, 100).animate({left: '+=100%'}, 400);
-//   }
+// Set the text you want to type out
 
-//   block.eq(nextIndex).addClass('active').animate({left: '0'}, 400);
-//   block.eq(currentIndex).removeClass('active');
-// }
+const title = "Welcome to my portfolio!";
+// const theText = "My name is Adrian and I am a senior computer science student at CUNY Queens College. I am excited to share with you my experience and skills that I have developed throughout my educational and professional journey. My passion for technology, software development and computer science have driven me to pursue a career in this field.";
+
+// Initialize variables for the typewriter effect
+let typeIndex = 0;
+let typeSpeed = 60;
+
+// Function to add the typewriter effect to the element
+function typeWriter(string) {
+  console.log(string);
+    if (typeIndex < string.length) {
+      typeElem.innerHTML += string.charAt(typeIndex);
+      typeIndex++;
+      setTimeout(typeWriter, typeSpeed, string);
+    }
+}
+
+// Call the function to start the typewriter effect
+typeWriter(title);
+
+
+// const second = document.querySelector("#second");
+
+// console.log(second.firstChild.text);
+// const s = 'hi';
+// typeWriter(s);

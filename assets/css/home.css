@@ -19,9 +19,15 @@
 }
 
 #welcome-title{
+    font-size: 2em;
+    font-weight: bold;
     margin-top: 0%;
     /* background-color: blueviolet; */
     position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5%;
+    /* background-color: red; */
 }
 
 h2 {
@@ -103,12 +109,23 @@ h2 {
   .block {
     opacity: .5;
     width: 98%;
-    height: 98%;
+    height: 90%;
     background-color: azure;
     position: absolute;
     /* transition: transform 0.5s ease; */
     transition: opacity 1s ease, transform 1s ease-in-out;
     color: black;
+    display: flex;
+    align-items:center;
+  }
+  .block p{
+    /* margin: 0 0 1em 0; */
+  }
+
+  .block img{
+    /* max-width: 100%; */
+    max-height: 100%;
+    /* margin: auto; */
   }
   
   .active {
