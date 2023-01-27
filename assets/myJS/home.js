@@ -136,6 +136,25 @@ var observerBlocks = new IntersectionObserver(function(entries) {
             nextBlock();
             timer = setInterval(nextBlock, 5000);
           });
+          // Get the container element
+          var c = $("#container");
+          
+          // Attach the TouchSwipe event to the container element
+          c.swipe({
+              swipeLeft: function() {
+                  // Code to execute when a swipe left event is detected
+                  clearInterval(timer);
+                  console.log("Swipe left");
+                  prevBlock();
+                },
+                swipeRight: function() {
+                  // Code to execute when a swipe right event is detected
+                  clearInterval(timer);
+                  console.log("Swipe right");
+                  nextBlock();
+              },
+              threshold: 15 // the minimum distance required for a swipe event to be detected
+          });
 
 
 
@@ -151,20 +170,3 @@ observerBlocks.observe(document.getElementById("sliding-blocks"));
 
 
 
-// Get the container element
-var c = $("#container");
-
-// Attach the TouchSwipe event to the container element
-c.swipe({
-    swipeLeft: function() {
-        // Code to execute when a swipe left event is detected
-        console.log("Swipe left")
-        prevBlock();
-      },
-      swipeRight: function() {
-        // Code to execute when a swipe right event is detected
-        console.log("Swipe right")
-        nextBlock();
-    },
-    threshold: 15 // the minimum distance required for a swipe event to be detected
-});
