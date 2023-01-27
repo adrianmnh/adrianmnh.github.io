@@ -48,6 +48,8 @@ images.forEach(function(image) {
 
 
 
+// Initialize the timer
+var timer = null;
 
 
 
@@ -61,10 +63,16 @@ var currentIndex = -1;
 document.addEventListener("keydown", function(event) {
   if (event.keyCode === 37) {
     // Left arrow key
+    clearInterval(timer);
     prevBlock();
+    // slideBlock('left');
+    timer = setInterval(nextBlock, 5000);
   } else if (event.keyCode === 39) {
     // Right arrow key
+    clearInterval(timer);
     nextBlock();
+    // slideBlock('left');
+    timer = setInterval(nextBlock, 5000);
   }
 });
 
@@ -125,12 +133,10 @@ function nextBlock() {
 
 // $("#container").on("swipeleft", nextBlock);
 // $("#container").on("swiperight", prevBlock);
-// $("#container").on("click", nextBlock);
+$("#container").on("click", nextBlock);
 
 
 
-// Initialize the timer
-// var timer = setInterval(nextBlock, 1000);
 
 // Create an observer
 var observerBlocks = new IntersectionObserver(function(entries) {
@@ -138,55 +144,35 @@ var observerBlocks = new IntersectionObserver(function(entries) {
 
     var c = $("#container");
           
-          // Attach the TouchSwipe event to the container element
-          c.swipe({
-              swipeLeft: function() {
-                  // Code to execute when a swipe left event is detected
-                  clearInterval(timer);
-                  console.log("Swipe left");
-                  prevBlock();
-                  timer = setInterval(nextBlock, 5000);
-                  
-                },
-                swipeRight: function() {
-                  // Code to execute when a swipe right event is detected
-                  clearInterval(timer);
-                  console.log("Swipe right");
-                  nextBlock();
-                  timer = setInterval(nextBlock, 5000);
-              },
-              threshold: 15 // the minimum distance required for a swipe event to be detected
-          });
-
-
-
       if (entry.isIntersecting) {
-          // Start the timer when the block enters the viewport
+
+
           timer = setInterval(nextBlock, 5000);
-          // console.log
+  
+        
+        // Attach the TouchSwipe event to the container element
+        c.swipe({
+          swipeLeft: function() {
+              // Code to execute when a swipe left event is detected
+              observerBlocks.unobserve(document.getElementById("sliding-blocks"));
+              clearInterval(timer);
+              console.log("Swipe left");
+              prevBlock();
+              // slideBlock('left');
+              timer = setInterval(nextBlock, 5000);
 
-
-          // // Clear the timer on swipe or click
-          // $("#container").on("swipeleft", function() {
-          //   clearInterval(timer);
-          //   nextBlock();
-          //   timer = setInterval(nextBlock, 5000);
-          // });
-          // $("#container").on("swiperight", function() {
-          //   clearInterval(timer);
-          //   prevBlock();
-          //   timer = setInterval(nextBlock, 5000);
-          // });
-          $("#container").on("click", function() {
-            clearInterval(timer);
-            // currentIndex--;
-            nextBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
-          // Get the container element
-          
-
-
+              
+            },
+            swipeRight: function() {
+              // Code to execute when a swipe right event is detected
+              clearInterval(timer);
+              console.log("Swipe right");
+              // slideBlock('right');
+              nextBlock();
+              timer = setInterval(nextBlock, 5000);
+          },
+          threshold: 15 // the minimum distance required for a swipe event to be detected
+      });
 
       } else {
           // Stop the timer when the block exits the viewport
@@ -199,4 +185,19 @@ var observerBlocks = new IntersectionObserver(function(entries) {
 observerBlocks.observe(document.getElementById("sliding-blocks"));
 
 
+// function slideBlock(direction) {
+//   var block = $('.block');
+//   var currentIndex = $('.block.active').index();
+//   var nextIndex;
 
+//   if (direction === 'left') {
+//     nextIndex = currentIndex === 0 ? block.length - 1 : currentIndex - 1;
+//     block.eq(currentIndex).animate({left: '-=50px'}, 100).animate({left: '+=50px'}, 100).animate({left: '-=100%'}, 400);
+//   } else {
+//     nextIndex = currentIndex === block.length - 1 ? 0 : currentIndex + 1;
+//     block.eq(currentIndex).animate({left: '+=50px'}, 100).animate({left: '-=50px'}, 100).animate({left: '+=100%'}, 400);
+//   }
+
+//   block.eq(nextIndex).addClass('active').animate({left: '0'}, 400);
+//   block.eq(currentIndex).removeClass('active');
+// }

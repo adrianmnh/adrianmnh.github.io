@@ -118,19 +118,19 @@ h2 {
   
   .inactive-left {
     /* transform: translateX(-40%); */
-    transform: translateX(80%);
+    transform: translateX(40%);
     opacity: 0;
   }
   .inactive-right {
-    transform: translateX(-40%);
+    transform: translateX(-80%);
     /* transform: translateX(40%); */
     opacity: 0;
   }
 
-  .blue {
+  /* .blue {
     background-color: blue;
   }
   .red {
     background-color: red;
   }
-  
+   */
