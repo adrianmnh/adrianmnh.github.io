@@ -119,17 +119,17 @@ var observerBlocks = new IntersectionObserver(function(entries) {
           timer = setInterval(nextBlock, 5000);
 
 
-          // Clear the timer on swipe or click
-          $("#container").on("swipeleft", function() {
-            clearInterval(timer);
-            nextBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
-          $("#container").on("swiperight", function() {
-            clearInterval(timer);
-            prevBlock();
-            timer = setInterval(nextBlock, 5000);
-          });
+          // // Clear the timer on swipe or click
+          // $("#container").on("swipeleft", function() {
+          //   clearInterval(timer);
+          //   nextBlock();
+          //   timer = setInterval(nextBlock, 5000);
+          // });
+          // $("#container").on("swiperight", function() {
+          //   clearInterval(timer);
+          //   prevBlock();
+          //   timer = setInterval(nextBlock, 5000);
+          // });
           $("#container").on("click", function() {
             clearInterval(timer);
             currentIndex--;
@@ -146,12 +146,15 @@ var observerBlocks = new IntersectionObserver(function(entries) {
                   clearInterval(timer);
                   console.log("Swipe left");
                   prevBlock();
+                  timer = setInterval(nextBlock, 2000);
+                  
                 },
                 swipeRight: function() {
                   // Code to execute when a swipe right event is detected
                   clearInterval(timer);
                   console.log("Swipe right");
                   nextBlock();
+                  timer = setInterval(nextBlock, 2000);
               },
               threshold: 15 // the minimum distance required for a swipe event to be detected
           });
