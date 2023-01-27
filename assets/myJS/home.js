@@ -133,7 +133,7 @@ function nextBlock() {
 
 // $("#container").on("swipeleft", nextBlock);
 // $("#container").on("swiperight", prevBlock);
-$("#container").on("click", nextBlock);
+// $("#container").on("click", nextBlock);
 
 
 
@@ -143,6 +143,13 @@ var observerBlocks = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
 
     var c = $("#container");
+
+    c.on("click", function() {
+        clearInterval(timer);
+        // currentIndex--;
+        nextBlock();
+        timer = setInterval(nextBlock, 5000);
+    });
           
       if (entry.isIntersecting) {
 
@@ -152,6 +159,8 @@ var observerBlocks = new IntersectionObserver(function(entries) {
         
         // Attach the TouchSwipe event to the container element
         c.swipe({
+
+          
           swipeLeft: function() {
               // Code to execute when a swipe left event is detected
               observerBlocks.unobserve(document.getElementById("sliding-blocks"));
