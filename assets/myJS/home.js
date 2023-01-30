@@ -172,25 +172,54 @@ const typeElem = document.querySelector(".typewriter");
 
 // Set the text you want to type out
 
-const title = "Welcome to my portfolio!";
+const title = "Welcome to my Portfolio!";
 // const theText = "My name is Adrian and I am a senior computer science student at CUNY Queens College. I am excited to share with you my experience and skills that I have developed throughout my educational and professional journey. My passion for technology, software development and computer science have driven me to pursue a career in this field.";
 
 // Initialize variables for the typewriter effect
 let typeIndex = 0;
 let typeSpeed = 60;
+let counter = 0;
+let maxCounter = 5;
 
 // Function to add the typewriter effect to the element
 function typeWriter(string) {
-  console.log(string);
+  if(counter<=maxCounter){
+    if(counter==maxCounter) typeElem.innerHTML = "";
+    else if(counter%2==0) typeElem.innerHTML = "|<br>⠀";
+    else typeElem.innerHTML ="<br>⠀";
+
+    counter++;
+    setTimeout(typeWriter, 300, string);
+    
+  } else{
+    console.log(string);
     if (typeIndex < string.length) {
       typeElem.innerHTML += string.charAt(typeIndex);
       typeIndex++;
-      setTimeout(typeWriter, typeSpeed, string);
     }
+    
+    setTimeout(typeWriter, typeSpeed, string);
+  }
+  
 }
 
-// Call the function to start the typewriter effect
-typeWriter(title);
+// Call the function to start the typewriter effect When document loads
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+    setTimeout(typeWriter, 1000, title);
+
+    // too slow
+    // const images = document.querySelectorAll('.image-grid img');
+
+    // function fadeIn() {
+    //     images.forEach(image => image.classList.add('active'));
+    // }
+    
+    // setTimeout(fadeIn, 2000);
+
+});
+
 
 
 // const second = document.querySelector("#second");

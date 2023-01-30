@@ -4,10 +4,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  width: 98%;
-  padding: 5% 5% 2% 5%;
-  margin-top: 5%;
-  margin-bottom: -1%;
+  width: 100%;
+  padding: 5% 5% 1% 5%;
+  margin-top: 8%;
+  margin-bottom: 1%;
+  margin-left: -3%;
+  opacity: .97;
 }
 
 .box-placeholder {
@@ -17,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 104%;
     /* background-color: red; */
     
 }
@@ -27,26 +29,33 @@
 }
 
 .box-placeholder .text-box{
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 100;
   width: 95%;
   color: #444546;
-  word-spacing: 80%;
+  word-spacing: 40%;
   /* background-color: blue; */
   /* margin-bottom: 2%; */
   padding: 5% 5% -5% 5%;
 }
+
+.text-box{
+  text-align: justify;
+}
+
 .box-placeholder .text-box b{
+  font-size: 1.005em;
   font-weight: 600;
   color: #222730;;
 }
 
 .image-grid {
+  /* background-color: azure; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -54,9 +63,10 @@
     font-size: 2.4em;
     font-weight: bold;
     margin-top: 0%;
+    margin-left: -7%;
     /* background-color: blueviolet; */
     position: relative;
-    width: 100%;
+    width: 120%;
     text-align: center;
     margin-bottom: -5%;
     /* background-color: red; */
@@ -80,7 +90,7 @@ h2 {
     width: 98%;
     height: 95%;
     object-fit: cover;
-    transition: transform 3s ease-in-out, opacity 4s ease-in-out, filter 7s ease-in-out;
+    transition: transform 3s ease-in-out, opacity 4s ease-in-out, filter 9s ease-in-out;
     filter: grayscale(100%);
     opacity: 0.005;
     transform: scale(.1);
@@ -94,50 +104,35 @@ h2 {
 }
 
 
-@media (min-width: 1080px) {
-    .image-grid a {
-        width: 25%;
-    }
-}
-
-@media (max-width: 1079px) and (min-width: 768px) {
-    .image-grid a {
-        width: 33%;
-    }
-}
-
-@media (max-width: 767px) {
-    .image-grid a {
-        width: 50%;
-    }
-}
-
 
 #sliding-blocks {
   
-    margin: 0 auto;
-    margin-top: -1.5%;
-    padding-top: 0;
-    height: 250px;
-    width: 98%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
-    /* border: blue solid 1px; */
-  }
-  
+  margin: 0 auto;
+  /* margin-top: -1.5%; */
+  margin-left: 1%;
+  padding-top: 0;
+  height: 250px;
+  width: 98%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+  /* border: blue solid 1px; */
+}
+
   #container {
     width: 99%;
     height: 97%;
+    margin-left: 1%;
     /* position: absolute;
     display: flex; */
-    position: relative;
+    position: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: yellow; */
+    background-color: gold;
+    /* background-color: #444546; */
   }
   
   .block {
@@ -151,12 +146,13 @@ h2 {
     color: black;
     display: flex;
     align-items:center;
+    padding: 5%;
   }
   .block p{
     font-size: 2em;
     /* margin: 0 0 1em 0; */
   }
-
+  
   .block img{
     /* max-width: 100%; */
     max-height: 100%;
@@ -178,11 +174,47 @@ h2 {
     /* transform: translateX(40%); */
     opacity: 0;
   }
+  
 
-  /* .blue {
-    background-color: blue;
+  
+  @media (min-width: 1080px) {
+      .image-grid a {
+          width: 33%;
+      }
   }
-  .red {
-    background-color: red;
+  
+  @media (max-width: 1079px) and (min-width: 768px) {
+      .image-grid a {
+          width: 33%;
+      }
   }
-   */
+  
+  @media (max-width: 767px) {
+      .image-grid a {
+          width: 50%;
+      }
+      #welcome-title{
+        margin-left: 2%;
+        font-size: 1.8em;
+        width: 90%;
+        /* background-color: blue; */
+        align-items: center;
+        justify-content: center;
+      }
+      #sliding-blocks{
+        margin-top: 3%;
+        width: 100%;
+        margin-left: -1.5%;
+        /* height: 80%; */
+      }
+      #container {
+        width: 105%;
+        margin-left: -1.5%;
+        padding-bottom: -5%;
+      }
+      .block{
+        margin-top: -1%;
+        height: 105%;
+      }
+  
+  }
