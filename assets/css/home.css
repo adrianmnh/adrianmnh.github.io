@@ -1,3 +1,15 @@
+.box-placeholder .text-block{
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  width: 98%;
+  padding: 5% 5% 2% 5%;
+  margin-top: 5%;
+  margin-bottom: -1%;
+}
+
 .box-placeholder {
     margin: 0 auto;
     margin-top: -2%;
@@ -5,8 +17,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    /* background-color: yellowgreen; */
+    width: 85%;
+    /* background-color: red; */
+    
+}
+
+#contact-me {
+  float: inline-end;
+}
+
+.box-placeholder .text-box{
+  font-size: 1.3em;
+  font-weight: 100;
+  width: 95%;
+  color: #444546;
+  word-spacing: 80%;
+  /* background-color: blue; */
+  /* margin-bottom: 2%; */
+  padding: 5% 5% -5% 5%;
+}
+.box-placeholder .text-box b{
+  font-weight: 600;
+  color: #222730;;
 }
 
 .image-grid {
@@ -18,8 +50,8 @@
     margin: 0 auto;
 }
 
-#welcome-title{
-    font-size: 2em;
+#welcome-title, #sub-title{
+    font-size: 2.4em;
     font-weight: bold;
     margin-top: 0%;
     /* background-color: blueviolet; */
@@ -45,7 +77,7 @@ h2 {
 }
 
 .image-grid .fade-in-image {
-    width: 95%;
+    width: 98%;
     height: 95%;
     object-fit: cover;
     transition: transform 3s ease-in-out, opacity 4s ease-in-out, filter 7s ease-in-out;
@@ -82,21 +114,23 @@ h2 {
 
 
 #sliding-blocks {
-
+  
+    margin: 0 auto;
+    margin-top: -1.5%;
     padding-top: 0;
     height: 250px;
-    width: 95%;
+    width: 98%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    /* background-color: blue; */
+    background-color: blue;
+    /* border: blue solid 1px; */
   }
   
   #container {
-    width: 98%;
-    height: 95%;
+    width: 99%;
+    height: 97%;
     /* position: absolute;
     display: flex; */
     position: relative;
@@ -108,8 +142,8 @@ h2 {
   
   .block {
     opacity: .5;
-    width: 98%;
-    height: 90%;
+    width: 99%;
+    height: 95%;
     background-color: azure;
     position: absolute;
     /* transition: transform 0.5s ease; */
@@ -119,6 +153,7 @@ h2 {
     align-items:center;
   }
   .block p{
+    font-size: 2em;
     /* margin: 0 0 1em 0; */
   }
 
