@@ -264,8 +264,10 @@ img[data-src] {
     margin: 0 0.35rem 0.5rem 0;
 
     &:hover {
-      background-color: #2a408e;
-      border-color: #2a408e;
+      // background-color: #2a408e;
+      // border-color: #2a408e;
+      background-color: #ffbb00;
+      border-color: #ffbb00;
       color: #fff;
       transition: none;
     }
@@ -674,9 +676,9 @@ $sidebar-display: "sidebar-display";
       border: 2px solid rgba(222, 222, 222, 0.7);
       overflow: hidden;
       transform: translateZ(0); /* fixed the zoom in Safari */
-      -webkit-transition: border-color 0.35s ease-in-out;
-      -moz-transition: border-color 0.35s ease-in-out;
-      transition: border-color 0.35s ease-in-out;
+      -webkit-transition: border-color 1.35s ease-in-out;
+      -moz-transition: border-color 1.35s ease-in-out;
+      transition: border-color 1.35s ease-in-out;
 
       &:hover {
         border-color: white;
@@ -738,6 +740,7 @@ $sidebar-display: "sidebar-display";
     &.active {
       .nav-link {
         color: var(--sidebar-active-color);
+        // color: #ffbb00;
       }
     }
 

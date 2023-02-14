@@ -149,8 +149,8 @@ img.preview-img {
 #toc li a {
   font-size: 0.8rem;
 
-  &.nav-link:not(.active) {
-    color: inherit;
+  &.nav-link:active {
+    color: #ffbb00;
   }
 
 }
