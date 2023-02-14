@@ -86,7 +86,7 @@ theme_mode:   dark # [light|dark]
 img_cdn: 'https://raw.githubusercontent.com/adrianmnh/adrianmnh.github.io/mainBranch/assets/img'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/portfolio.jpg'
+avatar: '/portfolio2.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true

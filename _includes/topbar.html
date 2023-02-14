@@ -10,7 +10,8 @@
 
     {% if paths.size == 0 or page.layout == 'home' %}
       <!-- index page -->
-      <span>{{ site.data.locales[lang].tabs.home | capitalize }} About me Page</span>
+      <!-- <span>{{ site.data.locales[lang].tabs.home | capitalize }} About me Page</span> -->
+      <span>{{site.data.locales[lang].tabs.home}}</span>
 
     {% else %}
 
