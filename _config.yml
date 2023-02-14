@@ -38,7 +38,7 @@ linkedin:
   username: adrianmnh
 
 # twitter:
-#   username: toovisibletosee            # change to your twitter username
+#   username: abc            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -47,11 +47,11 @@ social:
   email: adrian_noa@icloud.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/toovisibletosee      # change to your twitter homepage
+    # - https://twitter.com/abc      # change to your twitter homepage
     #- https://github.com/adrianmnh       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/adrianmnh
 
 google_site_verification:               # fill in to your verification string
 

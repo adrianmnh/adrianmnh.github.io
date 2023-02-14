@@ -33,3 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
 
 end
+
+
+# Thank you for the fantastic work Cotes Chung! 
+# - Adrian N
