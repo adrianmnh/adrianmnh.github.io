@@ -27,7 +27,7 @@
 // });
 /* --------------------------------------------------------------------------------- */
 
-var slidingBlockInterval = 6200;
+var slidingBlockInterval = 7000;
 
 
 // When user enters the view port
@@ -61,13 +61,13 @@ document.addEventListener("keydown", function(event) {
     clearInterval(timer);
     prevBlock();
     // slideBlock('left');
-    timer = setInterval(nextBlock, 5000);
+    timer = setInterval(nextBlock, slidingBlockInterval);
   } else if (event.keyCode === 39) {
     // Right arrow key
     clearInterval(timer);
     nextBlock();
     // slideBlock('left');
-    timer = setInterval(nextBlock, 5000);
+    timer = setInterval(nextBlock, slidingBlockInterval);
   }
 });
 

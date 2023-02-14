@@ -163,12 +163,15 @@ h2 {
     font-size-adjust: inherit;
     /* margin: 0 0 1em 0; */
   }
+  .block p b {
+    font-size: .9em;
+  }
   
   .block img{
     border-radius: 15px;
     object-fit: cover;
     object-position:54.5%;
-    /* width: 60%; */
+    width: 65%;
     height: 260px;
     /* max-height: 100%; */
     /* margin: auto; */
@@ -273,7 +276,8 @@ h2 {
     }
     .block p{
       margin-left: -5%;
-      font-size: auto;
+      /* font-size: auto; */
+      font-size: 1.65em;
       width: 99%;
     }
     
