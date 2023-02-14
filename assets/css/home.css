@@ -221,10 +221,10 @@ h2 {
 
   @media (max-width: 767px) {
     .image-grid .image-link-type1{
-        width: 50%;
+        width: 45%;
     }
     .image-grid .image-link-type2{
-      width: 100%;
+      width: 55%;
     }
 
 
