@@ -124,7 +124,7 @@ h2 {
 }
 
   #container {
-    border-radius: 14px;
+    border-radius: 5px;
     width: 99%;
     height: 97%;
     margin-left: 1%;
@@ -140,7 +140,7 @@ h2 {
   }
   
   .block {
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 1% auto;
     margin-top: 1.05%;
     margin-left: .4%;
@@ -159,7 +159,8 @@ h2 {
   }
   .block p{
     font-size: 1.8em;
-    width: 45%;
+    width: 46%;
+    font-size-adjust: inherit;
     /* margin: 0 0 1em 0; */
   }
   
@@ -167,7 +168,7 @@ h2 {
     border-radius: 15px;
     object-fit: cover;
     object-position:54.5%;
-    width: 60%;
+    /* width: 60%; */
     height: 260px;
     /* max-height: 100%; */
     /* margin: auto; */
@@ -226,7 +227,7 @@ h2 {
     }
 
     .block p{
-      font-size: 1.6em;
+      font-size: 1.55em;
       width: 42%;
     }
     
@@ -277,8 +278,9 @@ h2 {
     }
     
     .block img{
+      object-position:58%;
       margin-left: -3%;
-      width: 75%;
+      width: 86%;
       margin-bottom: 20px;
     }
     .active{
