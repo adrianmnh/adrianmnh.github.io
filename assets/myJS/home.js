@@ -27,6 +27,9 @@
 // });
 /* --------------------------------------------------------------------------------- */
 
+var slidingBlockInterval = 6200;
+
+
 // When user enters the view port
 var observerImages = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
@@ -72,6 +75,7 @@ function prevBlock() {
   // Remove active class from current block
   console.log("Left");
   blocks.forEach(function(block) {
+    block.classList.remove("inactive");
     block.classList.remove("active");
     block.classList.remove("inactive-left");
     block.classList.add("inactive-right");
@@ -98,6 +102,7 @@ function nextBlock() {
   
   // Remove active class from current block
   blocks.forEach(function(block) {
+    block.classList.remove("inactive");
     block.classList.remove("active");
     block.classList.remove("inactive-right");
     block.classList.add("inactive-left");
@@ -126,11 +131,11 @@ var observerBlocks = new IntersectionObserver(function(entries) {
         clearInterval(timer);
         // currentIndex--;
         nextBlock();
-        timer = setInterval(nextBlock, 5000);
+        timer = setInterval(nextBlock, slidingBlockInterval);
     });
           
       if (entry.isIntersecting) {
-          timer = setInterval(nextBlock, 5000);
+          timer = setInterval(nextBlock, slidingBlockInterval);
         // Attach the TouchSwipe event to the container element
         c.swipe({
 
@@ -141,7 +146,7 @@ var observerBlocks = new IntersectionObserver(function(entries) {
               clearInterval(timer);
               console.log("Swipe left");
               prevBlock();
-              timer = setInterval(nextBlock, 5000);
+              timer = setInterval(nextBlock, slidingBlockInterval);
 
               
             },
@@ -150,7 +155,7 @@ var observerBlocks = new IntersectionObserver(function(entries) {
               clearInterval(timer);
               console.log("Swipe right");
               nextBlock();
-              timer = setInterval(nextBlock, 5000);
+              timer = setInterval(nextBlock, slidingBlockInterval);
           },
           threshold: 15 // the minimum distance required for a swipe event to be detected
       });

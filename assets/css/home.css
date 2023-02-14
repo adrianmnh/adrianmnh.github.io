@@ -124,6 +124,7 @@ h2 {
 }
 
   #container {
+    border-radius: 14px;
     width: 99%;
     height: 97%;
     margin-left: 1%;
@@ -139,6 +140,7 @@ h2 {
   }
   
   .block {
+    border-radius: 15px;
     margin: 1% auto;
     margin-top: 1.05%;
     margin-left: .4%;
@@ -153,19 +155,20 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 1% 10% 1% 10%;
+    padding: 1% 6% 1% 6%;
   }
   .block p{
-    font-size: 2.2em;
-    width: 30%;
+    font-size: 1.8em;
+    width: 45%;
     /* margin: 0 0 1em 0; */
   }
   
   .block img{
+    border-radius: 15px;
     object-fit: cover;
-    /* display: inline-flex; */
-    width: 65%;
-    height: 290px;
+    object-position:54.5%;
+    width: 60%;
+    height: 260px;
     /* max-height: 100%; */
     /* margin: auto; */
     float: right;
@@ -174,6 +177,10 @@ h2 {
   .active {
     transform: translateX(0);
     opacity: .9;
+  }
+
+  .inactive {
+    opacity: 0;
   }
   
   .inactive-left {
@@ -186,6 +193,8 @@ h2 {
     /* transform: translateX(40%); */
     opacity: 0;
   }
+
+
   
     
   @media (min-width: 1080px) {
@@ -216,6 +225,15 @@ h2 {
       width: 39%;
     }
 
+    .block p{
+      font-size: 1.6em;
+      width: 42%;
+    }
+    
+    .block img{
+      width: 50%;
+    }
+
   }
 
 
@@ -238,48 +256,36 @@ h2 {
     }
     #sliding-blocks{
       margin-top: 3%;
-      width: 102%;
+      width: 101%;
       margin-left: -2.5%;
       height: 360px;
     }
     #container {
-      width: 105%;
-      margin-left: -1.5%;
+      width: 102%;
+      margin-left: 0.25%;
       padding-bottom: -5%;
       /* background-color: red; */
     }
 
     .block{
-      /* background-color: blue; */
-      /* margin-left: -5%; */
       height: 103%;
     }
     .block p{
       margin-left: -5%;
-      /* display: flex; */
-      /* font-size: 1.1em; */
-      width: 100%;
-      /* margin: 0 0 1em 0; */
+      font-size: auto;
+      width: 99%;
     }
     
     .block img{
       margin-left: -3%;
-      /* object-fit: cov */
-      /* er; */
-      /* display: inline-flex; */
-      width: 200%;
+      width: 75%;
       margin-bottom: 20px;
-      /* height: 290px; */
-      /* max-height: 100%; */
-      /* margin: auto; */
-      /* float: right; */
     }
     .active{
       flex-direction: column;
       align-content: center;
       text-align: center;
       margin-top: -1%;
-      /* height: 105%; */
       padding: 1% 2% 1% 5%;
       opacity: 1;
     }
