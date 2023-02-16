@@ -4,7 +4,7 @@ author: adrian
 date: 2022-10-2
 categories: [Image Processing, Thresholding Algorithm]
 tags: [Histogram, C++ Programming Language]
-pin: false
+pin: true
 math: true
 mermaid: true
 image:
