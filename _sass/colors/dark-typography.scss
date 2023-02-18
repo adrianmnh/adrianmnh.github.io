@@ -14,14 +14,15 @@
   /* Common color */
   --text-color: #e4f3e9;
   --text-muted-color: #e4f3e9;
-  --heading-color: e4f3e9;
+  --heading-color: #e4f3e9;
   --blockquote-border-color: #424242;
   --blockquote-text-color: #e4f3e9;
   --link-color: #e4f3e9;
    --link-underline-color: #e4f3e9;
   --button-bg: rgb(39, 40, 43);
   --btn-border-color: rgb(63, 65, 68);
-  --btn-backtotop-color: var(--text-color);
+  // --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-color: #ffbb00;
   --btn-backtotop-border-color: var(--btn-border-color);
   --btn-box-shadow: var(--main-wrapper-bg);
   --card-header-bg: var(--main-wrapper-bg);
@@ -34,7 +35,7 @@
   */
   // --sidebar-bg: radial-gradient(circle, #224785 0%, #1d1f27 100%);
   --sidebar-bg: #1d1f27;
-  --sidebar-muted-color: #f3e4e4;
+  --sidebar-muted-colo:var(--blockquote-text-color);
   --sidebar-active-color: #ffbb00;
   --nav-cursor-color: #ffbb00;
   --sidebar-btn-bg: ;
@@ -48,7 +49,7 @@
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Home page */
-  --post-list-text-color: #f3e4e4;
+  --post-list-text-color: var(--btn-share-color);
   --btn-patinator-text-color: var(--text-color);
   --btn-paginator-hover-color: #ffbb005a;
   --btn-paginator-border-color: var(--btn-border-color);
@@ -58,8 +59,11 @@
 
   /* Posts */
   --toc-highlight: #e4f3e9;
-  --tag-bg: rgb(41, 40, 40);
-  --tag-hover: rgb(43, 56, 62);
+  // --tag-bg: rgb(41, 40, 40);
+  // --tag-bg: #e4f3e9;
+  --tag-bg: rgb(43, 56, 62);
+  --tag-hover: #ffbb00;
+  // --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: rgba(42, 47, 53, 0.52); /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
@@ -68,7 +72,7 @@
   --btn-share-hover-color: #ffbb00;
   --relate-post-date: var(--text-muted-color);
   --card-bg: #222227;/*#fde2e2; */
-  --card-border-color: #ffbb00;
+  --card-border-color: #fab700be;
   --card-box-shadow: var(--main-wrapper-bg);
   --preview-img-bg: radial-gradient(circle, rgb(22 22 24) 0%, rgb(32 32 32) 100%);
   --kbd-wrap-color: #6a6a6a;
@@ -85,7 +89,8 @@
   --prompt-danger-icon-color: #fffb00;
 
   /* tags */
-  --tag-border: rgb(59, 79, 88);
+  // --tag-border: rgb(59, 79, 88);
+  --tag-border: var(--topbar-wrapper-bg);;
   --tag-shadow: rgb(32, 33, 33);
   --search-tag-bg: var(--tag-bg);
   --dash-color: rgb(63, 65, 68);

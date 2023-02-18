@@ -43,10 +43,6 @@
   }
 }
 
-%tag-hover {
-  background: var(--tag-hover);
-  transition: background 0.35s ease-in-out;
-}
 
 %table-cell {
   padding: 0.4rem 1rem;
@@ -58,6 +54,11 @@
   color: #ffbb00 !important;
   border-bottom: 1px solid #ffbb00;
   text-decoration: none;
+  font-weight: 600;
+}
+%tag-hover {
+  background: var(--tag-hover);
+  transition: background 0.35s ease-in-out;
 }
 
 %link-color {

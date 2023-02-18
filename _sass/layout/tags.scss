@@ -3,17 +3,26 @@
 */
 
 .tag {
+  color: #f3f3e4;
   border-radius: 0.7em;
   padding: 6px 8px 7px;
   margin-right: 0.8rem;
   line-height: 3rem;
   letter-spacing: 0;
-  border: 1px solid var(--tag-border) !important;
-  box-shadow: 0 0 3px 0 var(--tag-shadow);
+  // border: 2px solid var(--tag-border) !important;
+  border: 3px solid var(--tag-border) !important;
+  // box-shadow: 0 0 3px 0 var(--tag-shadow);
+  box-shadow: 0 0 3px 0 var(--topbar-wrapper-bg);
+
 
   span {
     margin-left: 0.6em;
     font-size: 0.7em;
     font-family: 'Oswald', sans-serif;
+  }
+  &:hover{
+    background-color: var(--topbar-wrapper-bg);
+    border: .5px solid #ffbb00 !important;
+    color: rgb(43, 56, 62) !important;
   }
 }
