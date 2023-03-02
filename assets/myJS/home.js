@@ -34,11 +34,21 @@ var slidingBlockInterval = 7000;
 var observerImages = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.intersectionRatio > 0) {
-      entry.target.classList.add('active');
+
+      entry.target.classList.add('loaded');
+      setTimeout(() => {
+        
+        entry.target.classList.add('inactive');
+        entry.target.classList.remove('loaded');
+
+      }, 6000);
       observerImages.unobserve(entry.target);
+    
     }
   });
 });
+
+
 
 var images = document.querySelectorAll('.image-grid img');
 images.forEach(function(image) {
