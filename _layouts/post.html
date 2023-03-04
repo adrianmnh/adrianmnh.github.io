@@ -11,16 +11,22 @@ tail_includes:
 
 {% include lang.html %}
 
+<head>
+  <link rel="stylesheet" href="../../assets/css/posts.css"> 
+</head>
+
+
+<body>
+  
+
 
 <!-- <button onclick="history.back()"><i class="fas fa-archive">txt</i></button> -->
 
-<button onclick="history.back()" style="border-radius: 5px;"><i class="fa-solid fa-rotate-left" style= "font-size:.8em"> Go Back</i></button>
+<button class="back-button" onclick="history.back()" style="border-radius: 5px;">
+  <i class="fa-solid fa-rotate-left"></i>
+</button>
 
-<h1 style="
-color: azure; 
-font-size: 2.5em; text-shadow: -4px 0 #550202, 0 1px #ffbb00, 1px 0 #ffbb00, 0 -4px #550202;
-font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  
-font-weight: 900;" data-toc-skip>{{ page.title }}</h1>
+<h1 class="page-title" data-toc-skip>{{ page.title }}</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -159,3 +165,7 @@ font-weight: 900;" data-toc-skip>{{ page.title }}</h1>
   </div><!-- .post-tail-bottom -->
 
 </div><!-- div.post-tail-wrapper -->
+
+
+
+</body>

@@ -15,18 +15,20 @@ image:
 ---
 ### **`depracated after Fall 2022 : CUNYfirst 9.2 Upgrade`**
 
-<img src="/posts/linebreak-fire.png" style="object-fit: cover; margin-left: -10%; margin-right: -10%; max-width: 139%" min-width="139%" >
+<img src="/posts/linebreak-fire.png" class="line-break" >
+
 
 
 **`usage`**
 
 <!-- copy and paste. Modify height and width if desired. -->
-<p align="center"><iframe 
+<p class="video" >
+<iframe 
 class="embeddedObject shadow resizable" 
 name="embedded_content" 
 scrolling="no" frameborder="4" type="text/html" 
         style="overflow:hidden;" src="https://www.screencast.com/users/LawlietAdrianLaw/folders/Default/media/e876c450-733a-463f-aa88-7c8140f11eec/embed" 
-height="300px" width="95%" 
+ 
 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
 1. download the contents of this project repo
@@ -37,7 +39,7 @@ webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
 _*This project does not store any user data outside of local environment_
 
-<img src="/posts/linebreak-fire.png" style="object-fit: cover; margin-left: -10%; margin-right: -10%; max-width: 139%" min-width="139%" >
+<img src="/posts/linebreak-fire.png" class="line-break" >
 
 
 **`source code`**
