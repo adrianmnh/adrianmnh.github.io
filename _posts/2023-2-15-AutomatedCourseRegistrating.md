@@ -42,7 +42,7 @@ _*This project does not store any user data outside of local environment_
 
 **`source code`**
 
-<a href="https://github.com/adrianmnh/CUNYFirst-Scraper-Spring2022"> move to project Repo</a>
+<a href="https://github.com/adrianmnh/CUNYfirst_RegistrationScraper"> move to project Repo</a>
 
 <br>
 
