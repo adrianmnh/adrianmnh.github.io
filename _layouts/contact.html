@@ -9,39 +9,141 @@ layout: page
     <link type="text/css" rel="stylesheet" href="../assets/css/contact.css">
 
   </head>
-  <body>
+<body>
 
-    <span>
-      adrian_noa@icloud.com
+
+<!-- modify this form HTML and place wherever you want your form -->
+<!-- <form
+  action="https://formspree.io/f/xqkobgeb"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label> -->
+  <!-- your other form fields go here -->
+  <!-- <button type="submit">Send</button>
+</form> -->
+
+
+
+<form   
+action="https://formspree.io/f/xqkobgeb"
+method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <input type="submit" value="Submit" id="submit">
+</form>
+
+
+
+
+<!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xqkobgeb",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <span>
+    adrian_noa@icloud.com
+  </span>
+  <div class="progress-bar-container">
+    <div class="progress-bar" data-max-percent="98">
+      <div class="progress"></div>
+    </div>
+
+    <div class="progress-bar" data-max-percent="60">
+      <div class="progress"></div>
+
+    </div>
+  </div>
+
+  <span>
+    https://www.linkedin.com/in/adrianmnh/
     </span>
-    <div class="progress-bar-container">
-      <div class="progress-bar" data-max-percent="98">
-        <div class="progress"></div>
-      </div>
 
-      <div class="progress-bar" data-max-percent="60">
-        <div class="progress"></div>
-
-      </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" data-max-percent="15">
+      <div class="progress"></div>
     </div>
-
-    <span>
-      https://www.linkedin.com/in/adrianmnh/
-      </span>
-
-    <div class="progress-bar-container">
-      <div class="progress-bar" data-max-percent="15">
-        <div class="progress"></div>
-      </div>
-      <div class="progress-bar" data-max-percent="50">
-        <div class="progress"></div>
-      </div>
+    <div class="progress-bar" data-max-percent="50">
+      <div class="progress"></div>
     </div>
+  </div>
 
 
-    <script src="../assets/myJS/contact.js"></script>
+  <script src="../assets/myJS/contact.js"></script>
 
 
 
-      <span> https://github.com/adrianmnh </span>
-  </body>
+    <span> https://github.com/adrianmnh </span> -->
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>

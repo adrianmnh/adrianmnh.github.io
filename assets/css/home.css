@@ -1,3 +1,11 @@
+a.link:hover{
+  color: #ffbb00 !important;
+  border-bottom: 1px solid #ffbb00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
 .box-placeholder .text-block{
   background-color: azure;
   display: flex;
@@ -13,8 +21,10 @@
 }
 
 .box-placeholder {
+
     margin: 0 auto;
     margin-top: -2%;
+    /* margin-top: 20%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,6 +70,7 @@
 }
 
 #welcome-title, #sub-title{
+  text-align: center;
     font-size: 2.4em;
     font-weight: bold;
     margin-top: 0%;
@@ -67,9 +78,21 @@
     /* background-color: blueviolet; */
     position: relative;
     width: 110%;
-    text-align: center;
     margin-bottom: -5%;
     /* background-color: red; */
+}
+
+#welcome-title{
+  /* position:sticky; */
+  margin-left: auto;
+  /* margin-right: auto; */
+  width: 100%;
+  /* text-align: left; */
+}
+
+#sub-title{
+  /* margin-top:200px; */
+
 }
 
 h2 {
@@ -125,19 +148,12 @@ h2 {
 #sliding-blocks {
   
   margin: 0 auto;
-  /* margin-top: -1.5%; */
   margin-left: 1%;
   padding-top: 0;
   height: 310px;
   width: 98%;
   position: relative;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
-  
-  /* background-color: blue; */
-  /* border: blue solid 1px; */
+
 }
 
   #container {
@@ -249,6 +265,10 @@ h2 {
   
   @media (max-width: 1079px) and (min-width: 768px) {
 
+    #welcome-title{
+      font-size: 2em;
+    }
+
     .image-grid .image-link-type1{
         width: 29%;
     }
@@ -276,12 +296,14 @@ h2 {
       width: 55%;
     }
 
+    /* .box-placeholder {
+      margin-top: 30%;
+    } */
 
     #welcome-title{
-      margin-left: 2%;
+      margin-left: 4%;
       font-size: 1.8em;
       width: 90%;
-      /* background-color: blue; */
       align-items: center;
       justify-content: center;
     }
@@ -332,3 +354,11 @@ h2 {
 
   }
   
+@media (hover: none){
+  a.link{
+    color: #ffbb00 !important;
+    border-bottom: 1px solid #ffbb00;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
