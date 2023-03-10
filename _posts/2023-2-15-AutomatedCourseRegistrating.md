@@ -15,6 +15,7 @@ image:
 ---
 ### **`depracated after Fall 2022 : CUNYfirst 9.2 Upgrade`**
 
+
 <img src="/posts/linebreak-fire.png" class="line-break" >
 
 
@@ -38,6 +39,7 @@ webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 5. Follow the prompts on screen
 
 _*This project does not store any user data outside of local environment_
+
 
 <img src="/posts/linebreak-fire.png" class="line-break" >
 
