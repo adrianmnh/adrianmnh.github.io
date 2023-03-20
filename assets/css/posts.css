@@ -58,3 +58,26 @@ img.line-break{
   min-width: 139%;
 }
 
+img.gif{
+  border-radius: 25px;
+  /* display: flex; */
+  min-width: 100px;
+  max-width: 400px;
+  width: 300px;
+  /* width:80%; */
+  object-fit: cover; 
+  margin: auto;
+  /* height: 10px; */
+}
+
+a.large-link{
+  font-size:1.5em;
+  font-weight:bold
+}
+
+a.link {
+}
+
+h2.subtitle{
+  font-weight: bold;
+}
