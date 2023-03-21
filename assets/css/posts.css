@@ -1,6 +1,7 @@
 
 .back-button {
   margin-right: 50%;
+  margin-top: -5%;
   z-index: 0;
   cursor: pointer;
   position: fixed;
