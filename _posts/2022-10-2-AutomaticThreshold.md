@@ -1,5 +1,5 @@
 ---
-title: Automatic Threshold Selection
+title: Threshold Selection
 author: adrian
 date: 2022-10-2
 categories: [Image Processing, Thresholding Algorithm]
@@ -14,19 +14,30 @@ image:
   alt: 
 ---
 
-## Objective
+
+**`Objective`**
 
 To take an image's histogram from a text file and find the best threshold using the Gaussian automatic threshold selection method.
 
-This process yields a Gaussian function which will be graphed along with the histogram, and the best threshold on a specified output file
+This process yields a Gaussian function which is graphed along with the histogram, and the best threshold on the output files
 
-## Usage:
+<a href="../../assets/pdf/threshold.pdf" class="large-link"> Project PDF source code and algorithms</a>
+
+**`usage`**
 
 1. Create a new folder
-2. Copy noa_adrian_main.cpp into empty folder
-3. Copy the BiGuass_data files 1 and 2 into a folder
-4. Run the following command
+2. Download main.cpp and data files
+4. Run the following commands
 
-`g++ noa_adrian_main.cpp -o main.exe && ./main.exe BiGuass_data1.txt outFile1-1.txt outFile1-2.txt && ./main.exe BiGuass_data2.txt outFile2-1.txt outFile2-2.txt`
+```c
+g++ main.cpp -o main.exe
+./main.exe image_histogram1.txt outFile1_1.txt outFile1_2.txt
+./main.exe image_histogram2.txt outFile2_1.txt outFile2_2.txt
+```
 
-<a href='https://github.com/adrianmnh/CS381-ComputerVision/tree/mainBranch/project3' style='font-size:1.5em; font-weight:bold'> Link to Project source code </a>
+
+<a href='https://github.com/adrianmnh/ImageDataProcessing/tree/mainBranch/3-AutomaticThresholdSelection' style='font-size:1.5em; font-weight:bold'> Link to Project repo </a>
+
+
+
+
