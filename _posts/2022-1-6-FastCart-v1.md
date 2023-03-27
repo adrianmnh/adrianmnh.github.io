@@ -23,6 +23,9 @@ The aim of our application is to provide local businesses with an online presenc
 
 **`source code and readme:`**
 
+<a href="https://github.com/SiliconValley4/DeliveryApp" class="large-link"> Project Repo</a>
+
+
 <p class="video" >
 <iframe 
 class="embeddedObject shadow resizable" 
@@ -36,9 +39,6 @@ webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
-<img src="https://github.com/SiliconValley4/DeliveryApp/raw/main/Submission/Unit%2013%20-%20Final%20Build%20Sprint.gif" width="100%">
-
-
 **`how to use`**
 
 To use FastCart, restaurant owners register on the website by creating a login and verifying their account. They then input information regarding their restaurant, including menus, beverages, combination platters, and pricing. The option to upload an image for each menu item is also provided.
@@ -48,7 +48,7 @@ Customers can easily create an account using Facebook authentication and begin b
 On the restaurant side, once an order is received, the restaurant manager approves the order, changing its status to in progress or canceled. When the order is ready for delivery, the status is changed to ready, at which point a driver can pick up the order and deliver it to the customer. Once the order is delivered, the status is changed to completed.
 
 
-<a href="https://github.com/SiliconValley4/DeliveryApp" class="large-link"> Project Repo</a>
+<img src="https://github.com/SiliconValley4/DeliveryApp/raw/main/Submission/Unit%2013%20-%20Final%20Build%20Sprint.gif" width="100%">
 
 **`background`**
 
