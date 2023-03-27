@@ -14,16 +14,51 @@ image:
   alt: 
 ---
 
+**`objective`**
+
+The aim of our application is to provide local businesses with an online presence, enabling them to reach out to their customers during the mid-stages of the pandemic. This was achieved by creating FastCart, a food delivery app with a web management system built on several technologies and frameworks.
+
 <img class="gif" src="https://github.com/SiliconValley4/DeliveryApp/raw/main/Submission/Unit%2012%20-%20Build%20Sprint%203.gif">
 
 
 **`source code and readme:`**
 
-<a href="https://github.com/SiliconValley4/DeliveryApp" class="large-link"> Project Repo</a>
+<p class="video" >
+<iframe 
+class="embeddedObject shadow resizable" 
+name="embedded_content" 
+scrolling="no" frameborder="4" type="text/html" 
+        style="overflow:hidden;" src="https://www.screencast.com/users/LawlietAdrianLaw/folders/Default/media/69b3dd04-2a98-4b8f-921f-3ea2710e0a74/embed" 
+ 
+webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+
 
 
 
 <img src="https://github.com/SiliconValley4/DeliveryApp/raw/main/Submission/Unit%2013%20-%20Final%20Build%20Sprint.gif" width="100%">
+
+
+**`how to use`**
+
+To use FastCart, restaurant owners register on the website by creating a login and verifying their account. They then input information regarding their restaurant, including menus, beverages, combination platters, and pricing. The option to upload an image for each menu item is also provided.
+
+Customers can easily create an account using Facebook authentication and begin browsing restaurants within their proximity. Once a restaurant is selected, customers can add items to their cart, change quantities, and proceed to payment. Orders created are submitted and given a pending status.
+
+On the restaurant side, once an order is received, the restaurant manager approves the order, changing its status to in progress or canceled. When the order is ready for delivery, the status is changed to ready, at which point a driver can pick up the order and deliver it to the customer. Once the order is delivered, the status is changed to completed.
+
+
+<a href="https://github.com/SiliconValley4/DeliveryApp" class="large-link"> Project Repo</a>
+
+**`background`**
+
+
+FastCart was developed using Xcode to create an iOS user interface in the Swift programming language, and Django, a Python framework, to create the backend server for the website and API. The object-oriented relational database PostgreSQL was used to store data, while Heroku, a Platform-as-a-Service, was utilized to host the website. In addition, AWS S3 was used to store assets uploaded by business owners, Facebook API was used for user authentication, and Stripe was used for payment processing.
+
+
+It is important to note that the user interface of the iOS application is different for customers and drivers, while the website is exclusively for restaurant owners.
+
+
 
 
 
@@ -34,5 +69,3 @@ image:
 
 - [X] Orlando Vargas
 - [X] Fernando Gonzales
-
-
