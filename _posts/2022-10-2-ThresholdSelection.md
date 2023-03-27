@@ -36,7 +36,7 @@ g++ main.cpp -o main.exe
 ```
 
 
-<a href='https://github.com/adrianmnh/ImageDataProcessing/tree/mainBranch/3-AutomaticThresholdSelection' style='font-size:1.5em; font-weight:bold'> Link to Project repo </a>
+<a href='https://github.com/adrianmnh/ImageDataProcessing/tree/mainBranch/3-AutomaticThresholdSelection' class="large-link"> Link to Project repo </a>
 
 
 

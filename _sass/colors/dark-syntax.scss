@@ -11,7 +11,7 @@
   .highlight .k { color: #66d9ef; } /* Keyword */
   .highlight .l { color: #ae81ff; } /* Literal */
   .highlight .n { color: #f8f8f2; } /* Name */
-  .highlight .o { color: #f92672; } /* Operator */
+  .highlight .o { color: #f8f8f2; } /* Operator */
   .highlight .p { color: #f8f8f2; } /* Punctuation */
   .highlight .cm { color: #ffd500; } /* Comment.Multiline */
   .highlight .cp { color: #dbb90c; } /* Comment.Preproc */
@@ -28,11 +28,11 @@
   .highlight .ld { color: #e6db74; } /* Literal.Date */
   .highlight .m { color: #ae81ff; } /* Literal.Number */
   .highlight .s { color: #e6db74; } /* Literal.String */
-  .highlight .na { color: #a6e22e; } /* Name.Attribute */
+  .highlight .na { color: #ffbb00; } /* Name.Attribute */
   .highlight .nb { color: #f8f8f2; } /* Name.Builtin */
   .highlight .nc { color: #a6e22e; } /* Name.Class */
   .highlight .no { color: #66d9ef; } /* Name.Constant */
-  .highlight .nd { color: #a6e22e; } /* Name.Decorator */
+  .highlight .nd { color: #e2c12e; } /* Name.Decorator */
   .highlight .ni { color: #f8f8f2; } /* Name.Entity */
   .highlight .ne { color: #a6e22e; } /* Name.Exception */
   .highlight .nf { color: #a6e22e; } /* Name.Function */
@@ -42,7 +42,7 @@
   .highlight .py { color: #f8f8f2; } /* Name.Property */
   .highlight .nt { color: #f92672; } /* Name.Tag */
   .highlight .nv { color: #f8f8f2; } /* Name.Variable */
-  .highlight .ow { color: #f92672; } /* Operator.Word */
+  .highlight .ow { color: #f8f8f2; } /* Operator.Word */
   .highlight .w { color: #f8f8f2; } /* Text.Whitespace */
   .highlight .mf { color: #ae81ff; } /* Literal.Number.Float */
   .highlight .mh { color: #ae81ff; } /* Literal.Number.Hex */
@@ -70,15 +70,25 @@
 
   /* -----  custom styles ------ */
 
-  --highlighter-rouge-color: #550202; /* `` inline code */
-  --inline-code-bg: #e4f3e9;          /* `` inline code */
+  --theme-gold: #ffbb00;
+  --theme-shudder: #491818;
+  --theme-rouge: #550202;
+  --theme-dnavy: #1c1e26;
+  --theme-lnavy: #222730;
+  --theme1: #B3CBB9;
+  --theme2: #C8EAD3;
+  --theme3: #979B8D;
+  --theme4: #5C7457;
+
+  --highlighter-rouge-color: var(--theme-shudder); /* `` inline code */
+  --inline-code-bg: var(--theme2);          /* `` inline code */
   --highlight-bg-color: #1d1f27;
   --highlight-lineno-color: #e4f3e9;
-  --code-header-text-color: #e4f3e9;
-  --code-header-muted-color: #e4f3e9;
-  --code-header-icon-color: #e4f3e9;
-  --clipboard-checked-color: #550202;
-  --filepath-text-color: #550202;
+  --code-header-text-color: var(--theme-gold);
+  --code-header-muted-color: var(--theme-gold);
+  --code-header-icon-color: var(--theme-gold);
+  --clipboard-checked-color: var(--theme-rouge);
+  --filepath-text-color: var(--theme-rouge);
   // --text-muted: #ffffff;
   // --text-muted-color: #ffffff;
 
