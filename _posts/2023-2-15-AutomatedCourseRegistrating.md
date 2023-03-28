@@ -3,7 +3,7 @@ title: CUNYfirst Automated Course Registration(for Windows)
 author: adrian
 date: 2022-1-25
 categories: [Web Scraping, Command-line App]
-tags: [.Python Programming Language, Selenium, Windows cmd, PowerShell ]
+tags: [🔥Python Programming Language, Selenium, Windows cmd, PowerShell ]
 pin: false
 math: true
 mermaid: true

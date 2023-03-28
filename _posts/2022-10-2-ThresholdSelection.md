@@ -3,7 +3,7 @@ title: Threshold Selection
 author: adrian
 date: 2022-10-2
 categories: [Image Processing, Thresholding Algorithm]
-tags: [.C++ Programming Language, Histogram]
+tags: [🔥C++ Programming Language, Histogram]
 pin: false
 math: true
 mermaid: true

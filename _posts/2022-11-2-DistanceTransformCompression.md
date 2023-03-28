@@ -3,7 +3,7 @@ title: Compression and Decompression via Distance Transform
 author: adrian
 date: 2022-11-2
 categories: [Image Processing, Skeleton Compression Algorithm]
-tags: [.C++ Programming Language, Binary Image]
+tags: [🔥C++ Programming Language, Binary Image]
 pin: false
 math: true
 mermaid: true
