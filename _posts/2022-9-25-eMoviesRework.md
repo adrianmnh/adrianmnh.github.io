@@ -4,7 +4,7 @@ author: adrian
 date: 2022-9-25 15:02:00 -400
 categories: [Data Analytics, Data Modeling and Databases]
 tags: [Data Modeling , erwin Data Modeler, Physical Data Model, Conceptual Data Model , Logical Data Model, SQL Server, Quest Software]
-pin: false
+pin: true
 math: true
 mermaid: true
 image:

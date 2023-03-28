@@ -3,7 +3,7 @@ title: Tip Calculator for iOS
 author: adrian
 date: 2021-9-30
 categories: [App Development, Swift UIStoryboard]
-tags: [Swift Programming Language, iOS Development, Xcode]
+tags: [.Swift Programming Language, iOS Development, Xcode]
 pin: false
 math: true
 mermaid: false
