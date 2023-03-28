@@ -55,7 +55,7 @@
   --btn-paginator-border-color: var(--btn-border-color);
   --btn-text-color: var(--text-color);
   --pin-bg: #ffbb00;
-  --pin-color: inherit;
+  --pin-color: var(--theme-gold);
 
   /* Posts */
   --toc-highlight: #e4f3e9;
@@ -72,6 +72,7 @@
   --btn-share-hover-color: #ffbb00;
   --relate-post-date: var(--text-muted-color);
   --card-bg: #222227;/*#fde2e2; */
+  --card-hovor-bg: var(--sidebar-bg);
   --card-border-color: #fab700be;
   --card-box-shadow: var(--main-wrapper-bg);
   --preview-img-bg: radial-gradient(circle, rgb(22 22 24) 0%, rgb(32 32 32) 100%);

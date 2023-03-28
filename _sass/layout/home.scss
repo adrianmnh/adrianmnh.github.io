@@ -54,16 +54,28 @@
 } // .pagination
 
 #post-list {
-  margin-top: 1rem;
+  margin-top: 1.75rem;
   padding-right: 0.5rem;
 
+  a:hover {
+    text-decoration: none;
+  }
+  
   .post-preview {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--main-border-color);
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+    background: var(--card-bg);
+    background: var(--main-wrapper-background);
+    
+    &:hover {
+      border: 1.5px solid var(--card-border-color);
+      transform: translate3d(0, -5px, 0);
+      background: var(--card-hovor-bg);
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
 
-    a:hover {
-      @extend %link-hover;
+    &:not(:last-child) {
+      margin-bottom: 1.75rem;
     }
 
     h1 {
@@ -71,20 +83,23 @@
       margin: 0;
     }
 
+    
+    
     .post-meta {
       i {
-        font-size: 0.73rem;
-
+        font-size: .83rem;
+        color: var(--theme-grey);
+        
         &:not(:first-child) {
           margin-left: 1.2rem;
         }
       }
-
+      
       em {
         @extend %normal-font-style;
       }
     }
-
+    
     .post-content {
       margin-top: 0.6rem;
       margin-bottom: 0.6rem;
@@ -102,19 +117,30 @@
     }
 
     .pin {
+
       > i {
         transform: rotate(45deg);
         padding-left: 3px;
         color: var(--pin-color);
+        font-size: 2em;
       }
 
       > span {
         display: none;
+        color: var(--theme-lnavy);
       }
     }
 
   } // .post-preview
 } // #post-list
+
+@media (hover: hover) {
+  .post-preview {
+    transition: transform .5s ease-in-out, background-color .45s ease-in-out;
+  }
+}
+
+
 
 /* Hide SideBar and TOC */
 @media all and (max-width: 830px) {
@@ -134,20 +160,28 @@
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
   #post-list {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 
-    .post-preview .post-meta {
-      .pin {
-        background: var(--pin-bg);
-        border-radius: 5px;
-        line-height: 1.4rem;
-        height: 1.3rem;
-        margin-top: 3px;
-        padding-left: 1px;
-        padding-right: 6px;
+    .post-preview {
+      padding: 0.5rem;
 
-        > span {
-          display: inline;
+      .post-meta {
+        .pin {
+          background: var(--pin-bg);
+          border-radius: 5px;
+          line-height: 1.4rem;
+          height: 1.3rem;
+          margin-top: 3px;
+          padding-left: 1px;
+          padding-right: 6px;
+          
+          > i {
+            color: var(--theme-wnavy);
+            font-size: 1.23em;
+          }
+          > span {
+            display: inline;
+          }
         }
       }
     }

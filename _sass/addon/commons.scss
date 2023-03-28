@@ -433,8 +433,9 @@ img[data-src] {
 }
 
 .post-meta {
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   word-spacing: 1px;
+  color: var(--theme-grey) !important;
 
   a {
     &:not(:last-child) {
