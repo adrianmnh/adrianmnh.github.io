@@ -7,11 +7,11 @@ tags: [🔥Swift Programming Language, iOS Development, Xcode]
 pin: false
 math: true
 mermaid: false
-image:
-  path: 
-  width: 800
-  height: 500
-  alt: 
+# image:
+#   path: /
+#   width: 800
+#   height: 500
+#   alt: 
 ---
 
 <img class="gif" src="https://raw.githubusercontent.com/adrianmnh/iOS-CodePath/main/TipCalculator/walkthrough2.gif">

@@ -7,11 +7,11 @@ tags: [🔥C++ Programming Language, Histogram]
 pin: false
 math: true
 mermaid: true
-image:
-  path: 
-  width: 800
-  height: 500
-  alt: 
+# image:
+#   path: /
+#   width: 800
+#   height: 500
+#   alt: 
 ---
 
 

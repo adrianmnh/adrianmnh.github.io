@@ -7,11 +7,11 @@ tags: [Data Modeling , erwin Data Modeler, Physical Data Model, Conceptual Data 
 pin: true
 math: true
 mermaid: true
-image:
-  path: 
-  width: 800
-  height: 500
-  alt: 
+# image:
+#   path: /
+#   width: 800
+#   height: 500
+#   alt: 
 ---
 
 **`background`**

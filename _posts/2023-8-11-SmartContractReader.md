@@ -7,11 +7,11 @@ tags: [🔥React, 🔥Solidity]
 pin: true
 math: true
 mermaid: false
-image:
-  path: 
-  width: 800
-  height: 500
-  alt: 
+# image:
+#   path: /
+#   width: 800
+#   height: 500
+#   alt: 
 ---
 
 <a href='https://erc.adriannyc.dev' class='large-link'>Link to App demo</a>

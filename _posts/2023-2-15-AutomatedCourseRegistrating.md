@@ -7,11 +7,11 @@ tags: [🔥Python Programming Language, Selenium, Windows cmd, PowerShell ]
 pin: false
 math: true
 mermaid: true
-image:
-  path: 
-  width: 800
-  height: 500
-  alt: 
+# image:
+#   path: /
+#   width: 800
+#   height: 500
+#   alt: 
 ---
 ### **`depracated after Fall 2022 : CUNYfirst 9.2 Upgrade`**
 
