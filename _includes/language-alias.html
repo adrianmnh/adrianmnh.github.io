@@ -11,6 +11,8 @@
 {% case _lang %}
   {% when 'actionscript', 'as', 'as3' %}
     {{ 'ActionScript' }}
+  {% when 'copyright' %}
+    {{ 'copyright' }}
   {% when 'applescript' %}
     {{ 'AppleScript' }}
   {% when 'brightscript', 'bs', 'brs' %}
@@ -48,7 +50,7 @@
   {% when 'rs','no_run','ignore','should_panic' %}
     {{ 'Rust' }}
   {% when 'bash', 'zsh', 'ksh', 'sh' %}
-    {{ 'Shell' }}
+    {{ 'bash' }}
   {% when 'st', 'squeak' %}
     {{ 'Smalltalk' }}
   {% when 'tex'%}

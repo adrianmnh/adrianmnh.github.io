@@ -7,6 +7,8 @@
 $sidebar-width: 260px !default;        /* the basic width */
 $sidebar-width-small: 210px !default;  /* screen width: >= 850px, <= 1199px (iPad landscape) */
 $sidebar-width-large: 350px !default;  /* screen width: >= 1650px */
+// $sidebar-width-large;
+
 
 /* tabs of sidebar */
 
@@ -25,7 +27,7 @@ $search-max-width: 210px !default;
 $footer-height: 5rem !default;
 $footer-height-mobile: 6rem !default;   /* screen width: <= 576px */
 
-$main-content-max-width: 1250px !default;
+$main-content-max-width: 2050px !default;
 
 $bottom-min-height: 35rem !default;
 

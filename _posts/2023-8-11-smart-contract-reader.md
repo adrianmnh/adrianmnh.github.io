@@ -85,6 +85,7 @@ npm run deploy -- -m "Custom commit message for gh-pages repo"
 **`Notes:`** The gh-pages module has an index.js file that contains a list of exports. In this file, you'll find branch and remote keys. Make sure to configure the remote value to match the name of the remote repository where your source code resides (e.g., "origin" or a custom name).
 
 Thank you for checking out this project! If you have any questions or issues, feel free to reach out.
+&copy;
 
 ```
 Copyright [2023] [Adrian Noa]
