@@ -3,7 +3,7 @@
 .back-button {
 	/* margin-right: 1em;
 	margin-top: -1em; */
-	/* z-index: 0; */
+	z-index: 2;
 	display: inline;
 	cursor: pointer;
 	position: fixed;

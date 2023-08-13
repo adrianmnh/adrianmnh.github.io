@@ -1207,8 +1207,8 @@ $sidebar-display: "sidebar-display";
 #back-to-top {
 	$size: 2.7em;
 
-	display: none;
-	z-index: 1;
+	// display: none;
+	z-index: 99;
 	cursor: pointer;
 	position: fixed;
 	background: var(--button-bg);
@@ -1532,7 +1532,7 @@ $sidebar-display: "sidebar-display";
 /* Compact icons in sidebar & panel hidden */
 @media all and (min-width: 850px) and (max-width: 1199px) {
 	#sidebar {
-		width: $sidebar-width-small;
+		// width: $sidebar-width-small;
 
 		.site-subtitle {
 			margin-left: 0.5rem!important;
@@ -1553,7 +1553,7 @@ $sidebar-display: "sidebar-display";
 	}
 
 	#topbar-wrapper {
-		left: 210px;
+		// left: 210px;
 	}
 
 	#search-results>div {
@@ -1572,7 +1572,7 @@ $sidebar-display: "sidebar-display";
 	}
 
 	#main-wrapper {
-		margin-left: 210px;
+		margin-left: 250px;
 	}
 
 	#breadcrumb {
@@ -1671,7 +1671,8 @@ $sidebar-display: "sidebar-display";
 	}
 
 	#back-to-top {
-		right: calc((100vw - #{$sidebar-width-large} - #{$main-content-max-width}) / 2 + 2rem);
+		// right: calc((100vw - #{$sidebar-width-large} - #{$main-content-max-width}) / 2 + 2rem);
+		right: 1rem;
 	}
 
 	#sidebar {
@@ -1805,11 +1806,24 @@ $sidebar-display: "sidebar-display";
 
 
 .container-padding {
-	padding-left: 0.5rem !important;
-	padding-right: 0.5rem !important;
+	// padding-left: 0.5rem !important;
+	// padding-right: 0.5rem !important;
 }
 
 
 .w-100 {
 	// width: 110% !important;
 }
+
+.card-body {
+	padding: .85rem!important;
+}
+
+.post {
+	padding: 0rem 0rem!important;
+}
+
+#core-wrapper {
+	padding: 0rem 0.75rem!important;
+}
+
