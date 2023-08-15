@@ -139,8 +139,11 @@ tail_includes:
 				{{ site.data.locales[lang].copyright.license.name }}
 			</a>
 			{% endcapture %}
+			<code>This post is licensed under {{ site.data.locales[lang].copyright.license.short | replace: ':LICENSE_NAME', _replacement}} by 			{{site.data.authors[page.author].name}}
+				</code>
 
-			{{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
+
+			<!-- {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }} -->
 
 			{% endif %}
 		</div>

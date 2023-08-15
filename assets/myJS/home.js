@@ -200,8 +200,8 @@ let maxCounter = 5;
 function typeWriter(string) {
   if(counter<=maxCounter){
     if(counter==maxCounter) typeElem.innerHTML = "";
-    else if(counter%2==0) typeElem.innerHTML = "|<br>⠀";
-    else typeElem.innerHTML ="<br>⠀";
+    else if(counter%2==0) typeElem.innerHTML = "|";
+    else typeElem.innerHTML ="⠀";
 
     counter++;
     setTimeout(typeWriter, 300, string);

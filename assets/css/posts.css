@@ -39,7 +39,7 @@ h1.page-title {
 }
 
 .cardlike-post-title {
-	width: 90%;
+	/* width: 90%; */
 	border: 1px solid var(--card-border-color);
 	border-radius: 25px;
 	background-color: var(--card-bg);
@@ -49,7 +49,8 @@ h1.page-title {
 	transition: all .3s ease-in-out;
 	margin-top: 3rem;
 	margin-bottom: 1rem;
-	padding: 1em;
+	padding: 1em 1.5em;
+	width: fit-content!important;
 }
 
 
@@ -137,7 +138,13 @@ img.gif {
 
 a.large-link {
 	font-size: 1.5em;
-	font-weight: bold
+	font-weight: bold;
+	height: 1.5em!important;
+}
+a.large-link:hover {
+	font-weight: bolder!important;
+	border-bottom: none!important;
+	transform: rotate(22deg);
 }
 
 a.link {}
@@ -153,3 +160,4 @@ h2.subtitle {
 		display: none;
 	}
 }
+

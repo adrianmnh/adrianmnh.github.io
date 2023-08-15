@@ -5,7 +5,8 @@
 layout:
   post: Post
   category: Category
-  tag: Tag
+  tag: Tags
+  contact: Contact me
 
 # The tabs of sidebar
 tabs:
@@ -31,7 +32,8 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: This post is licensed under :LICENSE_NAME by the author.
-    name: CC BY 4.0
+    name: Attribution 4.0 International(CC BY 4.0)
+    short: :LICENSE_NAME
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer

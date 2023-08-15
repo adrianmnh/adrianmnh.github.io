@@ -1,21 +1,46 @@
 ---
 layout: page
-# Contact Information
 ---
 
-{% include lang.html %}
+<div id="my-content-wrapper">
 
-<form   
-action="https://formspree.io/f/xqkobgeb"
-method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
+	{% include lang.html %}
 
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email" required>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <input type="submit" value="Submit" id="submit">
-</form>
+	<p>
+		Hello there!
+		<br>
+		<br>
+		Whether you have a question, a project proposal, or just want to chat tech, feel free to reach out via email or using the form below.
+		<br>
+		<br>
+		I'm actively looking to engage in meaningful discussions and collaborations. 
+		<br>Looking forward to hearing
+		from you!
+		<br>
+		<br>
+		<code>	github.com/adrianmnh </code>
+		<br>
+		<code>	linkedin.com/in/adrianmnh	</code>
+		<br>
+		<code>	email: anoa_apps@icloud.com	</code>
+	</p>
+	
+	
+	<p></p>
+	<br>
+	<form action="https://formspree.io/f/xqkobgeb" method="POST">
+		<!-- <label for="name">Name:</label> -->
+		<input type="text" id="name" name="name" placeholder="Your Name" required>
+		
+		<!-- <label for="email">Email:</label> -->
+		<input type="text" id="email" name="email" placeholder="developer@swe.com" required>
+		
+		<!-- <label for="message">Message:</label> -->
+		<textarea id="message" name="message" placeholder="Let's connect and work on a project!"></textarea>
+		
+		<input type="submit" value="Submit" id="submit">
+	</form>
+	
+	<p></p>
+	<br>
+</div>

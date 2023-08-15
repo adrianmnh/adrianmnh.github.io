@@ -1820,10 +1820,13 @@ $sidebar-display: "sidebar-display";
 }
 
 .post {
-	padding: 0rem 0rem!important;
+	padding: 0rem 1rem!important;
 }
 
 #core-wrapper {
 	padding: 0rem 0.75rem!important;
 }
 
+#my-content-wrapper {
+	padding: 0rem 1.75rem!important;
+}
